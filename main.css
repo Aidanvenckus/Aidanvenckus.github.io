@@ -1,0 +1,169 @@
+
+
+
+  html{font-family:Arial}
+  
+  body{
+    margin:0px 0px 0px 0px;
+    font-size: 28px;
+  }
+
+  .header{
+    background-color: #474747;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer{
+    background-color: #474747;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .header_textBig{
+    font-size: 48px;
+    color:white;
+  }
+  .header_textSmall{
+    font-size: 30px;
+    color:darkgrey;
+  }
+  .footer_textBig{
+    font-size: 30px;
+    color:white;
+  }
+  .footer_textSmall{
+    font-size: 26px;
+    color:white;
+  }
+
+  .banner{
+    position:absolute;
+    top:0; left:0; right:0;
+    height: 100;
+    width: 100%;
+  }
+
+  .controls{
+    border: 0.5px solid gray;
+  }
+
+  .padding_designs{
+    margin: 20 150 0 150;          /* Top Right Bottom Left */
+  }
+
+  .padding_designstext{
+    margin: 0 150 20 150;          /* Top Right Bottom Left */
+  }
+
+  .main_padding{
+    margin: 0 100 0 100;          /* Top Right Bottom Left */
+  }
+
+  .Space{
+    padding-top: 50px;
+    padding-bottom: 50px
+  }
+  
+  /* This is for the Photo to scale */
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+
+  img {
+    max-width: 100%
+  }
+
+  .image {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-basis: 80%
+  }
+
+  .text{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size:2.5vw         /* vw = viewpoint width which will scale with window size*/
+  }
+
+  .small_text{
+    font-size: 12px;
+
+    font-size:2vw         /* vw = viewpoint width which will scale with window size*/
+  }
+
+  /* ---End of: "This is for the Photo to scale" */
+  .border{
+    border: 0.5px solid gray;   /* Putting grey border */
+    border-radius: 10px;          /* Rounding Edges */
+    height: 250;
+    width: 250;
+  }
+
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+
+  li{
+    border-right: 1px solid #bbb; /* Adds seperators for options*/
+    float: left;                    /* Options Start on Left */
+  }
+
+  li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover{
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #0096FF;
+  }
+
+
+.fa {                 /* Social Media Icon structure */
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+
+.fa:hover {           /* Hover Effect on Social Media Icons */
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* LinkedIn */
+.fa-LinkedIn {
+  background: #007bb5;
+  color: white;
+}
+.fa-Instagram {
+  background: #ea4c89;
+  color: white;
+}
+.fa-Github {
+  background: white;
+  color: black;
+}

@@ -1,0 +1,101 @@
+
+<html>
+
+  <head>
+    <meta charset = "utf-8">
+    <title>Aidan Venckus</title>
+    <link rel="icon" href="Images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- Including the CSS Style Sheet-->
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <!-- For each page change menue color to the correct page.-->
+  <body>
+
+    <!-- Header -->
+    <div class="header">
+      <b class= "header_textBig" > 3D Designs </b>
+      <br>
+    </div>
+    
+    <!-- Menu Bar -->
+    <ul>
+      <li><a href="index.html" id="#Top">Home</a></li>
+      <li><a href="resume.html"  >Resume</a></li>
+      <li><a href="3DDesigns.html" class="active"> 3D Designs</a></li>
+      <li><a href="Projects.html"> Projects</a></li>
+    </ul>
+
+    <!-- Page Description -->
+    <!--<p><strong class = "text" > 3D Designs:</strong></p>-->
+    <p class="text">
+      Here you will find the 3D models I've designed as STL files, 3D Prints, and Animations. I designed most of my models recently in Fusion360 but in the past 
+      used SolidWorks.
+      <br> <br>
+      I choose to have the STL files (Standard Triangle Language) avaliable as they are 
+      the industry standard file type for 3D Printing. STL uses a series of triangles to represent the surfaces of a model then, applications such as CURA allow 
+      it to become Gcode (Geometic code) which are the machine's instructions for pathing/moving/speed/etc. for use in a 3D printer.
+    </p>
+
+    <!-- MP4 option (GIF turned out better)
+    <video controls loop width="320" height="240" autoplay muted>
+    <source src="Bench.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    -->
+
+    <!-- Start of the Designs -->
+    <center>
+
+    <!-- Bench! -->
+    <figure>
+      <img class = "border padding_designs" src="Gifs/Bench.gif" /> 
+      <figcaption class = "padding_designstext">  
+        <a href="3DModels/Buddy_Bench.stl"   download> Bench Model.stl </a>
+      </figcaption>
+    </figure>
+
+    <!-- Minecraft Model -->
+    <figure>
+      <img class = "border padding_designs" src="Gifs/MC_model.gif" /> 
+      <figcaption class = "padding_designstext">  
+        <a href="3DModels/MC_All.stl"   download> MC_All.stl </a>
+        <br>
+        <a href="3DModels/MC_Arm.stl"   download> MC_Arm.stl </a>
+        <br>
+        <a href="3DModels/MC_ArmWithHoles.stl"   download> MC_ArmWithHoles.stl </a>
+        <br>
+        <a href="3DModels/MC_Chest.stl"   download> MC_Chest.stl </a>
+        <br>
+        <a href="3DModels/MC_Head.stl"   download> MC_Head.stl </a>
+        <br>
+        <a href="3DModels/MC_Leg.stl"   download> MC_Leg.stl </a>
+      </figcaption>
+    </figure>
+
+    <!-- Bird Feeder Model! -->
+    <figure>
+      <img class = "border padding_designs" src="Gifs/Fence_Bird_Feeder.gif" /> 
+      <figcaption class = "padding_designstext">  
+        <a href="3DModels/Fence_Bird_Feeder.stl"   download> Fence_Bird_Feeder.stl </a>
+      </figcaption>
+    </figure>
+
+    
+    <!-- End of Models -->
+    </center>
+
+    <!-- This is a page break to footer -->
+    <ul>
+      <br>
+    </ul>
+
+    <!-- This is a footer -->
+    <div class="footer">  
+      <br>
+    </div>
+
+  </body>
+</html>
