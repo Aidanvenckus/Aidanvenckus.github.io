@@ -124,6 +124,7 @@
   li{
     border-right: 1px solid #bbb; /* Adds seperators for options*/
     float: left;                    /* Options Start on Left */
+    margin: auto;
   }
 
   li a{
@@ -132,10 +133,12 @@
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+
   }
 
   li a:hover{
     background-color: #111;
+
   }
 
   .active {
