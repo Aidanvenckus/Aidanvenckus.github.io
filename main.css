@@ -107,23 +107,24 @@
   }
 
   ul{
-    display: flex;
-    flex-direction: row; /* not needed as this is the default behavior */
-    flex-wrap: wrap;
-    overflow: auto;
+    /*display: flex;*/
+    /*flex-direction: row;*/ /* not needed as this is the default behavior */
+    /*flex-wrap: wrap;
+    overflow: auto;*/
     
     list-style-type: none;
     margin: auto;
     padding: 0;
-    /*overflow: hidden;*/
+    overflow: hidden;
     background-color: #333;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
   }
 
+  
   /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-@media screen and (max-width: 300px) {
+/*@media screen and (max-width: 300px) {
   li a{
     float: none;
     display: block;
@@ -131,11 +132,12 @@
     text-align: center;
   }
 }
+  */
+
 
   li{
     border-right: 1px solid #bbb; /* Adds seperators for options*/
     float: left;                    /* Options Start on Left */
-    margin: auto;
   }
 
   li a{
