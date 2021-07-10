@@ -13,7 +13,6 @@
     justify-content: space-between; /* Pushes them as far apart as possible */
     align-items: center;
     background-color: #333;
-    /* background-color: #474747;  might look better */
     color: white; /*Text color*/
     position: -webkit-sticky; 
     position: sticky;
@@ -67,7 +66,7 @@
       display: flex;
     }
     .navbar-links{
-      display: none;
+      /*display: none;*/
       width: 100%;
     }
 
