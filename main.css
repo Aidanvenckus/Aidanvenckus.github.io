@@ -59,7 +59,7 @@
 
   /* This is called a media query
   When a specific condition is met it runs the code*/
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
     .toggle-button{
       display: flex;
     }
@@ -90,7 +90,6 @@
       display: flex;
     }
   }
-
 
 
   .header{
@@ -216,10 +215,11 @@
     background-color: #111; 
 
   }
-  .active {   /* Color of menu options when selected */
+  /*
+  .active {  
     background-color: #0096FF;  
   }
-
+ */
 
 .fa {                 /* Social Media Icon structure */
   padding: 20px;
