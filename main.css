@@ -13,7 +13,10 @@
     justify-content: space-between; /* Pushes them as far apart as possible */
     align-items: center;
     background-color: #333;
+    /* background-color: #474747;  might look better */
     color: white; /*Text color*/
+    position: -webkit-sticky; 
+    position: sticky;
   }
   
   .navbar-links ul{ /* Working on the navbar links */
@@ -148,7 +151,9 @@
 
   .Space{
     padding-top: 50px;
-    padding-bottom: 50px
+    padding-bottom: 50px;
+    background-color: #333;
+    
   }
   
   /* This is for the Photo to scale */
@@ -189,6 +194,7 @@
     height: 250;
     width: 250;
   }
+
 /*
   ul{
     list-style-type: none;
@@ -221,6 +227,9 @@
   }
  */
 
+
+
+ /* SOCIAL MEDIA CIRCLES*/
 .fa {                 /* Social Media Icon structure */
   padding: 20px;
   font-size: 30px;
@@ -229,12 +238,9 @@
   text-decoration: none;
   border-radius: 50%;
 }
-
-
 .fa:hover {           /* Hover Effect on Social Media Icons */
   opacity: 0.7;
 }
-
 /* Set a specific color for each brand */
 /* LinkedIn */
 .fa-LinkedIn {
