@@ -59,7 +59,7 @@
 
   /* This is called a media query
   When a specific condition is met it runs the code*/
-  @media (max-width: 400px) {
+  @media (max-width: 800px) {
     .toggle-button{
       display: flex;
     }
