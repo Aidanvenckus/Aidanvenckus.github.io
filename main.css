@@ -189,20 +189,20 @@
     height: 250;
     width: 250;
   }
-
+/*
   ul{
     list-style-type: none;
     margin: auto;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    position: -webkit-sticky; /* Safari */
+    position: -webkit-sticky; 
     position: sticky;
     top: 0;
   }
   li{
-    border-right: 1px solid #bbb; /* Adds seperators for options*/
-    float: left;                    /* Options Start on Left */
+    border-right: 1px solid #bbb; 
+    float: left;                    
   }
   li a{
     display: block;
@@ -211,11 +211,11 @@
     padding: 14px 16px;
     text-decoration: none;
   }
-  li a:hover{ /* Color of menu options when hovering */
+  li a:hover{ 
     background-color: #111; 
 
   }
-  /*
+  
   .active {  
     background-color: #0096FF;  
   }
