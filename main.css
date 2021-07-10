@@ -12,7 +12,7 @@
     display: flex;  /* Use flexbox to have options appear side by side */
     justify-content: space-between; /* Pushes them as far apart as possible */
     align-items: center;
-    background-color: #474747;
+    background-color: #333;
     color: white; /*Text color*/
   }
   
