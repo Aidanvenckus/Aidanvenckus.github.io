@@ -7,6 +7,8 @@
     <link rel="icon" href="Images/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+        <!-- Including the JavaScript-->
+        <script src="script.js" defer> </script> <!--Defer: A script that will not run until after the page has loaded:-->
      <!-- Including the CSS Style Sheet-->
     <link rel="stylesheet" href="main.css">
   </head>
@@ -19,19 +21,20 @@
       <br>
     </div>
     
-    <!--Navigation Bar-->
-    <nav class = "navbar">
-      <a href = "#" class ="toggle-button">   
-        <span class="bar"> </span>
-        <span class="bar"> </span>
-        <span class="bar"> </span>
-      </a>
+    <!--Mobile Nav Bar Toggle-->
+    <a href = "#" class ="toggle-button">
+      <span class="bar"> </span>
+      <span class="bar"> </span>
+      <span class="bar"> </span>
+    </a>
+    <!-- Navigation Bar-->
+    <nav class = "navbar">    
       <div class="navbar-links"> <!--Navigation bar links-->
         <ul>
-          <li><a href="index.html" >Home</a></li> <!--Active tells which page we are one-->
+          <li><a href="index.html">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="3DDesigns.html"> 3D Designs</a></li>
-          <li><a href="Projects.html" class="currentpage"> Projects</a></li>
+          <li><a href="#Top" class="currentpage" id="#Top"> Projects</a></li>
         </ul>
       </div>
     </nav>

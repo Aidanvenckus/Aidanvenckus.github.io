@@ -7,6 +7,8 @@
     <link rel="icon" href="Images/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+        <!-- Including the JavaScript-->
+        <script src="script.js" defer> </script> <!--Defer: A script that will not run until after the page has loaded:-->
      <!-- Including the CSS Style Sheet-->
     <link rel="stylesheet" href="main.css">
   </head>
@@ -20,18 +22,19 @@
       <br>
     </div>
     
-    <!--Navigation Bar-->
-    <nav class = "navbar">
-      <a href = "#" class ="toggle-button">   <!--Drop down menu-->
-        <span class="bar"> </span>
-        <span class="bar"> </span>
-        <span class="bar"> </span>
-      </a>
+    <!--Mobile Nav Bar Toggle-->
+    <a href = "#" class ="toggle-button">
+      <span class="bar"> </span>
+      <span class="bar"> </span>
+      <span class="bar"> </span>
+    </a>
+    <!-- Navigation Bar-->
+    <nav class = "navbar">    
       <div class="navbar-links"> <!--Navigation bar links-->
         <ul>
-          <li><a href="index.html">Home</a></li> <!--Active tells which page we are one-->
+          <li><a href="index.html">Home</a></li> 
           <li><a href="resume.html">Resume</a></li>
-          <li><a href="3DDesigns.html" class="currentpage"> 3D Designs</a></li>
+          <li><a href="#Top" class="currentpage" id="#Top"> 3D Designs</a></li>
           <li><a href="Projects.html"> Projects</a></li>
         </ul>
       </div>
@@ -60,7 +63,7 @@
 
     <!-- Bench! -->
     <figure>
-      <img class = "border padding_designs" src="Gifs/Bench.gif" /> 
+      <img class = "padding_designs" src="Gifs/Bench.gif" /> 
       <figcaption class = "padding_designstext">  
         <a href="3DModels/Buddy_Bench.stl"   download> Bench Model.stl </a>
       </figcaption>
@@ -68,7 +71,7 @@
 
     <!-- Minecraft Model -->
     <figure>
-      <img class = "border padding_designs" src="Gifs/MC_model.gif" /> 
+      <img class = "padding_designs" src="Gifs/MC_model.gif" /> 
       <figcaption class = "padding_designstext">  
         <a href="3DModels/MC_All.stl"   download> MC_All.stl </a>
         <br>
@@ -86,7 +89,7 @@
 
     <!-- Bird Feeder Model! -->
     <figure>
-      <img class = "border padding_designs" src="Gifs/Fence_Bird_Feeder.gif" /> 
+      <img class = "padding_designs" src="Gifs/Fence_Bird_Feeder.gif" /> 
       <figcaption class = "padding_designstext">  
         <a href="3DModels/Fence_Bird_Feeder.stl"   download> Fence_Bird_Feeder.stl </a>
       </figcaption>
@@ -94,7 +97,7 @@
 
     <!-- Welcome Model! -->
     <figure>
-      <img class = "border padding_designs" src="Gifs/Welcome.gif" /> 
+      <img class = "padding_designs" src="Gifs/WelcomeV2.gif" /> 
       <figcaption class = "padding_designstext">  
         <a href="3DModels/Welcome.stl"   download> Welcome.stl </a>
       </figcaption>
@@ -103,11 +106,8 @@
     <!-- End of Models -->
     </center>
 
-    <!-- This is a page break to footer -->
-    <ul>
-      <br>
-    </ul>
-
+    <!-- Spacing -->
+    <br>
     <!-- This is a footer -->
     <div class="footer">  
       <br>
