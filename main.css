@@ -7,7 +7,7 @@
     box-sizing: border-box;
   }
   */
-  
+
   body{
     margin: 0;
     padding: 0;
@@ -78,7 +78,6 @@
     }
     .navbar-links{
       /*display: none;*/
-      display: none;
       width: 100%;
     }
 
