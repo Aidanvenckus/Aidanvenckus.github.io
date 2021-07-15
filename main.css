@@ -25,10 +25,12 @@
     position: sticky; */
   }
 
+  /*
   .navbar-links{
     height: 100%;
   }
-  
+  */
+
   .navbar-links ul{ /* Working on the navbar links */
     margin: 0;
     padding: 0;
