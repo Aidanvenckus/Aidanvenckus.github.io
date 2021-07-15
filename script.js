@@ -1,4 +1,4 @@
-
+//Drop down click not working
 
 //Importing the 2 elements
 const toggleButton = document.getElementsByClassName('toggle-button')[0]

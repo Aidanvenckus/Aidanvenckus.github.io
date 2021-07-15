@@ -2,6 +2,10 @@
 
   html{font-family:Arial}
 
+  * {
+    box-sizing: border-box;
+  }
+
   body{
     margin: 0;
     padding: 0;
@@ -10,12 +14,17 @@
 
   .navbar{  /* Working on the navigation bar */
     display: flex;  /* Use flexbox to have options appear side by side */
+    position: relative;
     justify-content: space-between; /* Pushes them as far apart as possible */
-    align-items: center;
+    align-items: center; /* Try stretch */
     background-color: #333;
     color: white; /*Text color*/
-    position: -webkit-sticky; 
-    position: sticky;
+    /*position: -webkit-sticky; 
+    position: sticky; */
+  }
+
+  .navbar-links{
+    height: 100%;
   }
   
   .navbar-links ul{ /* Working on the navbar links */
@@ -67,6 +76,7 @@
     }
     .navbar-links{
       /*display: none;*/
+      display: none;
       width: 100%;
     }
 
@@ -192,40 +202,10 @@
     width: 250;
   }
 
-/*
-  ul{
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    position: -webkit-sticky; 
-    position: sticky;
-    top: 0;
-  }
-  li{
-    border-right: 1px solid #bbb; 
-    float: left;                    
-  }
-  li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  li a:hover{ 
-    background-color: #111; 
-
-  }
-  */
   .currentpage {  
     background-color: #0096FF;  
   }
  
-
-
-
  /* SOCIAL MEDIA CIRCLES*/
 .fa {                 /* Social Media Icon structure */
   padding: 20px;
