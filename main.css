@@ -53,9 +53,9 @@ body{
   height: 21px;
 }
 .toggle-button .bar{
-  height: 3px;
+  height: 5px;
   width: 100%;
-  background-color: white;
+  background-color: #0096FF;
   border-radius: 10px;
 }
 
@@ -63,6 +63,8 @@ body{
 When a specific condition is met it runs the code*/
 @media (max-width: 600px) {
   .toggle-button{
+    
+    
     display: flex;
   }
 
@@ -108,11 +110,11 @@ When a specific condition is met it runs the code*/
 }
 
 .header_textBig{
-  font-size: 3rem;
+  font-size: 8vw;
   color:white;
 }
 .header_textSmall{
-  font-size: 1.8rem;
+  font-size: 4vw;
   color:darkgrey;
 }
 .footer_textBig{
@@ -136,7 +138,7 @@ When a specific condition is met it runs the code*/
 }
 
 .padding_designs{
-  margin: 20 150 0 150;          /* Top Right Bottom Left */
+  margin: 20 100 0 100;          /* Top Right Bottom Left */
 }
 
 .padding_designstext{
@@ -174,7 +176,7 @@ img {
   font-size: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  font-size:2.5vw         /* vw = viewpoint width which will scale with window size*/
+  font-size:3vw         /* vw = viewpoint width which will scale with window size*/
 }
 
 .small_text{
