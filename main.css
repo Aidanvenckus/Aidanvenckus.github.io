@@ -1,201 +1,192 @@
 
 
-  html{font-family:Arial}
+html{font-family:Arial}
 
-  body{
-    margin: 0;
-    padding: 0;
-    font-size: 28px;
-  }
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+}
 
-  .navbar{  /* Working on the navigation bar */
-    display: flex;  /* Use flexbox to have options appear side by side */
-    position: relative;
-    justify-content: space-between; /* Pushes them as far apart as possible */
-    align-items: center; /* Try stretch */
-    background-color: #333;
-    color: white; /*Text color*/
-    /*position: -webkit-sticky; 
-    position: sticky; */
-  }
+.navbar{  /* Working on the navigation bar */
+  display: flex;  /* Use flexbox to have options appear side by side */
+  position: relative;
+  justify-content: space-between; /* Pushes them as far apart as possible */
+  align-items: center; /* Try stretch */
+  background-color: #333;
+  color: white; /*Text color*/
+  /*position: -webkit-sticky; 
+  position: sticky; */
+}
+.navbar-links ul{ /* Working on the navbar links */
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.navbar-links li{ /* Working on the list items to edit */
+  list-style: none; /* removes list style (no dots or anything) */
+}
+.navbar-links li a{ /* Edit all the anchor tag styles */
+  text-decoration: none;
+  color:white;
+  padding: 1rem;
+  display: block;
+}
+.navbar-links li:hover{  /*Changing what happens when hovering mouse over list items*/
+  background-color: #555
+}
 
-  .navbar-links ul{ /* Working on the navbar links */
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
+/* Mobile menu drop down bar*/
+.toggle-button{
+  position: absolute; /*Forces it to be in a position*/
+  top: .75rem;
+  right: 1rem;
+  display: none; /* Have it not display by default*/
+  /*We want it to only display when we have smaller screens*/
+  flex-direction: column; /* menu is a collumn (dropdown) menu*/
+  justify-content: space-between; /* maximize space */
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
 
-  .navbar-links li{ /* Working on the list items to edit */
-    list-style: none; /* removes list style (no dots or anything) */
-  }
-
-  .navbar-links li a{ /* Edit all the anchor tag styles */
-    text-decoration: none;
-    color:white;
-    padding: 1rem;
-    display: block;
-  }
-
-  .navbar-links li:hover{  /*Changing what happens when hovering mouse over list items*/
-    background-color: #555
-  }
-
-  /* Mobile menu drop down bar*/
+/* This is called a media query
+When a specific condition is met it runs the code*/
+@media (max-width: 600px) {
   .toggle-button{
-    position: absolute; /*Forces it to be in a position*/
-    top: .75rem;
-    right: 1rem;
-    display: none; /* Have it not display by default*/
-    /*We want it to only display when we have smaller screens*/
-    flex-direction: column; /* menu is a collumn (dropdown) menu*/
-    justify-content: space-between; /* maximize space */
-    width: 30px;
-    height: 21px;
-  }
-
-  .toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-  }
-
-  /* This is called a media query
-  When a specific condition is met it runs the code*/
-  @media (max-width: 600px) {
-    .toggle-button{
-      display: flex;
-    }
-    .navbar-links{
-      display: none;
-      width: 100%;
-    }
-
-    .navbar{
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .navbar-links ul{
-      width: 100%;
-      flex-direction: column;
-    }
-
-    .navbar-links li{
-      text-align: center;
-    }
-
-    .navbar-links li a{
-      padding: .5rem 1rem;
-    }
-    /* when navbar is being active (used)*/
-    .navbar-links.active{
-      display: flex;
-    }
-  }
-
-
-  .header{
-    background-color: #474747;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .footer{
-    background-color: #474747;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
-  .header_textBig{
-    font-size: 48px;
-    color:white;
-  }
-  .header_textSmall{
-    font-size: 30px;
-    color:darkgrey;
-  }
-  .footer_textBig{
-    font-size: 30px;
-    color:white;
-  }
-  .footer_textSmall{
-    font-size: 26px;
-    color:white;
-  }
-
-  .banner{
-    position:absolute;
-    top:0; left:0; right:0;
-    height: 100;
-    width: 100%;
-  }
-
-  .controls{
-    border: 0.5px solid gray;
-  }
-
-  .padding_designs{
-    margin: 20 150 0 150;          /* Top Right Bottom Left */
-  }
-
-  .padding_designstext{
-    margin: 0 150 20 150;          /* Top Right Bottom Left */
-  }
-
-  .main_padding{
-    margin: 0 100 0 100;          /* Top Right Bottom Left */
-  }
-
-  .Space{
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  
-  /* This is for the Photo to scale */
-  .container {
     display: flex;
-    align-items: center;
-    justify-content: center
   }
 
-  img {
-    max-width: 100%
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
   }
-
-  .image {
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    flex-basis: 80%
+  .navbar-links{
+    display: none;
+    width: 100%;
   }
-
-  .text{
-    font-size: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size:2.5vw         /* vw = viewpoint width which will scale with window size*/
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
   }
-
-  .small_text{
-    font-size: 12px;
-
-    font-size:2vw         /* vw = viewpoint width which will scale with window size*/
+  .navbar-links li{
+    text-align: center;
   }
-
-  /* ---End of: "This is for the Photo to scale" */
-  .border{
-    border: 0.5px solid gray;   /* Putting grey border */
-    border-radius: 10px;          /* Rounding Edges */
-    height: 250;
-    width: 250;
+  .navbar-links li a{
+    padding: .5rem 1rem;
   }
-
-  .currentpage {  
-    background-color: #0096FF;  
+  .navbar-links.active{ /*Navbar being used*/
+    display: flex;
   }
+}
+/* End of Media Query*/
+
+.header{
+  background-color: #474747;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer{
+  background-color: #474747;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header_textBig{
+  font-size: 48px;
+  color:white;
+}
+.header_textSmall{
+  font-size: 30px;
+  color:darkgrey;
+}
+.footer_textBig{
+  font-size: 30px;
+  color:white;
+}
+.footer_textSmall{
+  font-size: 26px;
+  color:white;
+}
+
+.banner{
+  position:absolute;
+  top:0; left:0; right:0;
+  height: 100;
+  width: 100%;
+}
+
+.controls{
+  border: 0.5px solid gray;
+}
+
+.padding_designs{
+  margin: 20 150 0 150;          /* Top Right Bottom Left */
+}
+
+.padding_designstext{
+  margin: 0 150 20 150;          /* Top Right Bottom Left */
+}
+
+.main_padding{
+  margin: 0 100 0 100;          /* Top Right Bottom Left */
+}
+
+.Space{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* This is for the Photo to scale */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+img {
+  max-width: 100%
+}
+
+.image {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-basis: 80%
+}
+
+.text{
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size:2.5vw         /* vw = viewpoint width which will scale with window size*/
+}
+
+.small_text{
+  font-size: 12px;
+
+  font-size:2vw         /* vw = viewpoint width which will scale with window size*/
+}
+
+/* ---End of: "This is for the Photo to scale" */
+.border{
+  border: 0.5px solid gray;   /* Putting grey border */
+  border-radius: 10px;          /* Rounding Edges */
+  height: 250;
+  width: 250;
+}
+
+.currentpage {  
+  background-color: #0096FF;  
+}
  
  /* SOCIAL MEDIA CIRCLES*/
 .fa {                 /* Social Media Icon structure */
