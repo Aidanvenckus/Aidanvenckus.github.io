@@ -2,12 +2,6 @@
 
   html{font-family:Arial}
 
-  /*
-  * {
-    box-sizing: border-box;
-  }
-  */
-
   body{
     margin: 0;
     padding: 0;
@@ -24,12 +18,6 @@
     /*position: -webkit-sticky; 
     position: sticky; */
   }
-
-  /*
-  .navbar-links{
-    height: 100%;
-  }
-  */
 
   .navbar-links ul{ /* Working on the navbar links */
     margin: 0;
@@ -79,7 +67,7 @@
       display: flex;
     }
     .navbar-links{
-      /*display: none;*/
+      display: none;
       width: 100%;
     }
 
