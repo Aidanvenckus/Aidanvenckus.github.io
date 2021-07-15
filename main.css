@@ -138,7 +138,8 @@ When a specific condition is met it runs the code*/
 }
 
 .padding_designs{
-  margin: 20 100 0 100;          /* Top Right Bottom Left */
+  margin: 20 0 0 0;          /* Top Right Bottom Left */
+  
   width:60%;
   height: auto;
 }
