@@ -1,6 +1,80 @@
 
 
-html{font-family:Arial}
+html{font-family:sans-serif}
+
+
+/* FADE EFFECT */
+.Fade{
+  animation: fadeIn linear 3s;
+  -webkit-animation: fadeIn linear 3s;
+  -moz-animation: fadeIn linear 3s;
+  -o-animation: fadeIn linear 3s;
+  -ms-animation: fadeIn linear 3s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+/* END OF FADE */
+
+
+/* TypeWriting Animation */
+:root {
+  --bg-color: #474747;
+  --typewriterSpeed: 6s;
+  --typewriterCharacters: 13;
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+.TypeWriter::before,
+.TypeWriter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.TypeWriter::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed)
+    steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.TypeWriter::after {
+  width: 0.125em;
+  background: black;
+  animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards,
+    blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+/* End of TypeWriting Animation */
+
+
 
 body{
   margin: 0;
@@ -15,6 +89,11 @@ body{
   padding-bottom: 10px;
 }
 .header_textBig{
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  width: max-content;
+  /*font-size: clamp(1rem, 3vw + 1rem, 4rem);*/
+  
   font-size: 6vw;
   /*font-size: 3rem; */
   color:white;
@@ -114,6 +193,8 @@ When a specific condition is met it runs the code*/
 
 /*  Another media query for later for large screens
 @media screen and (min-width: 1200px) {
+
+  
 }
 */
 
