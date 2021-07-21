@@ -64,7 +64,6 @@ html{font-family:Roboto}
   animation: typewriter var(--typewriterSpeed)
     steps(var(--typewriterCharacters)) 1s forwards;
 }
-
 .TypeWriter::after {
   width: 0.125em;
   background: black;
@@ -75,7 +74,7 @@ html{font-family:Roboto}
 /* End of TypeWriting Animation */
 
 
-
+/* BASIC FORMATING */
 body{
   margin: 0;
   padding: 0;
