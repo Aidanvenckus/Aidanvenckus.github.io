@@ -3,7 +3,7 @@
 /*html{font-family:sans-serif}*/
 html{font-family:Roboto}
 
-/* FADE EFFECT */
+/* FADE EFFECT can be added to class to have text/images fade in */
 .Fade{
   animation: fadeIn linear 3s;
   -webkit-animation: fadeIn linear 3s;
