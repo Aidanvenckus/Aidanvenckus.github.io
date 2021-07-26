@@ -5,11 +5,11 @@ html{font-family:Roboto}
 
 /* FADE EFFECT can be added to class to have text/images fade in */
 .Fade{
-  animation: fadeIn linear 3s;
-  -webkit-animation: fadeIn linear 3s;
-  -moz-animation: fadeIn linear 3s;
-  -o-animation: fadeIn linear 3s;
-  -ms-animation: fadeIn linear 3s;
+  animation: fadeIn linear 2s;
+  -webkit-animation: fadeIn linear 2s;
+  -moz-animation: fadeIn linear 2s;
+  -o-animation: fadeIn linear 2s;
+  -ms-animation: fadeIn linear 2s;
 }
 @keyframes fadeIn {
   0% {opacity:0;}
@@ -37,8 +37,22 @@ html{font-family:Roboto}
 /* TypeWriting Animation */
 :root {
   --bg-color: #474747;
-  --typewriterSpeed: 6s;
-  --typewriterCharacters: 13;
+}
+.typewriter_home_title{
+  --typewriterCharacters:13;
+  --typewriterSpeed: 4s;
+}
+.typewriter_resume_title{
+  --typewriterCharacters:6;
+  --typewriterSpeed: 2.5s;
+}
+.typewriter_designs_title{
+  --typewriterCharacters:10;
+  --typewriterSpeed: 3.5s;
+}
+.typewriter_proj_title{
+  --typewriterCharacters:8;
+  --typewriterSpeed: 3s;
 }
 @keyframes typewriter {
   to {
