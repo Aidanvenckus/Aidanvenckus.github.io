@@ -1,6 +1,5 @@
 
 <html>
-
   <head>
     <meta charset = "utf-8">
     <title>Aidan Venckus</title>
@@ -13,22 +12,21 @@
     <link rel="stylesheet" href="main.css">
   </head>
 
-  <body>
-
+  <body class="Fade">
     <div class="header">
       <b class= "header_textBig TypeWriter typewriter_proj_title"> Projects </b>
       <br>
     </div>
     
-    <!--Mobile Nav Bar Toggle-->
+    <!-- MOBILE NAV BAR TOGGLE-->
     <a href = "#" class ="toggle-button">
       <span class="bar"> </span>
       <span class="bar"> </span>
       <span class="bar"> </span>
     </a>
-    <!-- Navigation Bar-->
+    <!-- NAVIGATION BAR -->
     <nav class = "navbar">    
-      <div class="navbar-links"> <!--Navigation bar links-->
+      <div class="navbar-links">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="resume.html">Resume</a></li>
@@ -38,16 +36,19 @@
       </div>
     </nav>
 
+    <!-- INTRODUCTION -->
     <p class="text">
       Here you will find Active and Past projects I've either made for school or in my freetime
       <br> <br>
       The code of the projects that I've done at UC Santa Cruz are mostly redacted in order to maintain academic integrity.
     </p>
 
+    <!--PROJECT: OSILLISCOPE-->
     <hr>
     <p><strong class = "text" > "TinyScope" Osilliscope:</strong></p>
 
-    <center> <img class= "padding_designs image" src="Images/Tinyscope.png" ></img></center>
+    <center> <img class= "padding_designs image" src="Images/Tinyscope.png" ></img> </center>
+    
 
     <p class="text">
       The "Tinyscope" dual-channel oscilloscope that I designed for my Embedded System Design class at UCSC. 
@@ -57,62 +58,67 @@
       Oscilloscopes are useful as they assist in finding the amplitude, frequency, distortion, and other characteristics of signals. 
       The Tinyscope allows all this information to be found for a limited range of voltages at a fraction of the size and cost of a standard oscilloscope.
     </p>
-      <!-- Tinyscope Features -->
-      <center> 
-      <b class="text"> List of Features: </b>
-    </center>
-      <!-- dl is a description list 
-           dt: is description term 
-           dd: description definition -->
-      <dl class="text">
-      <dt>2 Waveform Channels</dt>
-      <dt>Sampling rate of 250k samples/second for all 4 ADC channels.</dt>
-      <dd>- 2 Channels for Analog Signals</dd>
-      <dd>- 2 Channels for Potentiometers’ Readings</dd>
 
-      <dt>2 Waveform Modes</dt>
-      <dd>- Free-Running</dd>
-      <dd>- Triggered</dd>
+    <!-- Tinyscope Features -->
+    <center> <b class="text"> List of Features: </b> </center>
+ 
+    <!-- dl is a description list 
+          dt: is description term 
+          dd: description definition -->
+    <dl class="text">
+    <dt>2 Waveform Channels</dt>
+    <dt>Sampling rate of 250k samples/second for all 4 ADC channels.</dt>
+    <dd>- 2 Channels for Analog Signals</dd>
+    <dd>- 2 Channels for Potentiometers’ Readings</dd>
 
-      <dt>User Input to alter Waveform</dt>
-      <dd>- Xscaling</dd>
-      <dd>- Yscaling</dd>
-      <dd>- Trigger Level</dd>
-      <dd>- Trigger Slope</dd>
-      <dd>- Waveform Stopped / Started</dd>
+    <dt>2 Waveform Modes</dt>
+    <dd>- Free-Running</dd>
+    <dd>- Triggered</dd>
 
-      <dt>Frequency Calculation</dt>
-      <dt>Scrolling Waveforms (via Potentiometers)</dt>
-     </dl>
+    <dt>User Input to alter Waveform</dt>
+    <dd>- Xscaling</dd>
+    <dd>- Yscaling</dd>
+    <dd>- Trigger Level</dd>
+    <dd>- Trigger Slope</dd>
+    <dd>- Waveform Stopped / Started</dd>
+
+    <dt>Frequency Calculation</dt>
+    <dt>Scrolling Waveforms (via Potentiometers)</dt>
+    </dl>
+  
     
+    <center>
+      <b class = "text"> TinyScope Schematic: </b> <br>
+      <img class= "padding_designs image" src="Images/Tinyscope_Schematic.png"> </img> <br>
 
-      <center> <b class = "text"> TinyScope Schematic: </b> </center>
-      <center> <img class= "padding_designs image" src="Images/Tinyscope_Schematic.png" ></img></center>
+      <b class = "text"> TinyScope FlowChart: </b> <br>
+      <img class= "padding_designs image" src="Images/TinyscopeFlow.png"> </img> <br>
 
-      <center> <b class = "text"> TinyScope FlowChart: </b> </center>
-      <center> <img class= "padding_designs image" src="Images/TinyscopeFlow.png" ></img></center>
+      <b class = "text"> TinyScope Overview: </b> <br>
+      <img class= "padding_designs image" src="Images/Tinyscope_Overview.png"> </img> <br>
+    </center>
 
-      <center> <b class = "text"> TinyScope Overview: </b> </center>
-      <center> <img class= "padding_designs image" src="Images/Tinyscope_Overview.png" ></img></center>
-
-
-
+    <!--PROJECT: ELECTRIC BIKE-->
     <hr> <!--Horizontal Rule-->
     <p><strong class = "text" > DIY - Electric Bike:</strong></p>
-    <br>
+    <p class="text">
+      In progress...
+    </p>
 
+    <!--PROJECT: ELECTRIC RC PLANE-->
     <hr>
     <p><strong class = "text" > Designing Flight - Eletric RC Plane:</strong></p>
+    <p class="text">
+      In progress...
+    </p>
+
+    <br>
+    <br> <!--SPACE-->
     <br>
 
-
-    <ul> <!-- This is a page break to the contact info -->
-        <br>
-    </ul>
-
-        <div class="footer">  
-          <br>
-        </div>
+    <div class="footer">  
+      <br>
+    </div>
 
   </body>
 </html>

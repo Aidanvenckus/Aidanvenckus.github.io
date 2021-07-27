@@ -12,23 +12,23 @@ html{font-family:sans-serif}
   -ms-animation: fadeIn linear 2s;
 }
 @keyframes fadeIn {
-  0% {opacity:0;}
+  0% {opacity:0.3;}
   100% {opacity:1;}
 }
 @-moz-keyframes fadeIn {
-  0% {opacity:0;}
+  0% {opacity:0.3;}
   100% {opacity:1;}
 }
 @-webkit-keyframes fadeIn {
-  0% {opacity:0;}
+  0% {opacity:0.3;}
   100% {opacity:1;}
 }
 @-o-keyframes fadeIn {
-  0% {opacity:0;}
+  0% {opacity:0.3;}
   100% {opacity:1;}
 }
 @-ms-keyframes fadeIn {
-  0% {opacity:0;}
+  0% {opacity:0.3;}
   100% {opacity:1;}
 }
 /* END OF FADE */
@@ -99,6 +99,7 @@ body{
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  opacity: 1;
 }
 .header_textBig{
   position: relative;
@@ -290,14 +291,6 @@ img {
   font-size: 2.5vw;        /* vw = viewpoint width which will scale with window size*/
 }
 
-/* ---End of: "This is for the Photo to scale" */
-.border{
-  border: 0.5px solid gray;   /* Putting grey border */
-  border-radius: 10px;          /* Rounding Edges */
-  height: 250;
-  width: 250;
-}
-
 .currentpage {  
   background-color: #0096FF;  
 }
@@ -315,7 +308,6 @@ img {
   opacity: 0.7;
 }
 /* Set a specific color for each brand */
-/* LinkedIn */
 .fa-LinkedIn {
   background: #007bb5;
   color: white;
