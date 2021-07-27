@@ -105,7 +105,6 @@ body{
   font-family: "Roboto mono", monospace;
   width: max-content;
   font-size: clamp(1rem, 3vw + 1rem, 4rem);
-  
   font-size: 4vw;
   color:white;
 }
@@ -169,10 +168,10 @@ body{
   height: 21px;
 }
 .toggle-button .bar{
-  height: 5px;
+  height: 4px;
   width: 100%;
   background-color: #0096FF;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 /* This is called a media query
@@ -185,7 +184,6 @@ When a specific condition is met it runs the code*/
     width: max-content;
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
   }
-
 
   .toggle-button{
     display: flex;
@@ -268,11 +266,6 @@ When a specific condition is met it runs the code*/
   margin: 0 100 0 100;          /* Top Right Bottom Left */
 }
 
-.Space{
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 /* This is for the Photo to scale */
 .container {
   display: flex;
@@ -295,11 +288,6 @@ img {
   padding-left: 10%;
   padding-right: 10%;
   font-size: 2.5vw;        /* vw = viewpoint width which will scale with window size*/
-}
-
-.small_text{
-  font-size: 12px;
-  font-size:2vw         /* vw = viewpoint width which will scale with window size*/
 }
 
 /* ---End of: "This is for the Photo to scale" */
