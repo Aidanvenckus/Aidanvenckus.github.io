@@ -91,9 +91,14 @@ html{font-family:sans-serif}
 body{
   margin: 0;
   padding: 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   /*font-size: 28px;*/
 }
+
+.link:hover{
+  color:red;
+}
+
 .header{
   background-color: #474747;
   padding-left: 20px;
@@ -105,7 +110,7 @@ body{
   position: relative;
   font-family: "Roboto mono", monospace;
   width: max-content;
-  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  /*font-size: clamp(1rem, 3vw + 1rem, 4rem);*/
   font-size: 4vw;
   color:white;
 }
@@ -116,7 +121,6 @@ body{
 
 .navbar{  /* Working on the navigation bar */
   display: flex;  /* Use flexbox to have options appear side by side */
-  /*position: relative;*/
   justify-content: space-between; /* Pushes them as far apart as possible */
   align-items: center; /* Try stretch */
   background-color: #333;
@@ -144,7 +148,7 @@ body{
   text-align: center;
   /* MENU OPTION BORDERS */
   border:1px solid #e2e2e2;
-  border-width: 1px 1px 0 0;
+  border-width: 1px 1px 1px 1px;
 }
 .navbar-links li a{ /* Edit all the anchor tag styles */
   text-decoration: none;
@@ -153,7 +157,8 @@ body{
   display: block;
 }
 .navbar-links li:hover{  /*Changing what happens when hovering mouse over list items*/
-  background-color: #555
+  background-color: #555;
+  transform: scale(0.8);
 }
 
 /* Mobile menu drop down bar*/
@@ -174,17 +179,14 @@ body{
   background-color: #0096FF;
   border-radius: 8px;
 }
+.toggle-button:hover{
+  transform: scale(0.8);
+}
 
 /* This is called a media query
 When a specific condition is met it runs the code*/
 @media only screen and (max-width: 600px) {
   /* Likely not nessesary here*/
-  .header_textBig{
-    position: relative;
-    font-family: "Roboto mono", monospace;
-    width: max-content;
-    font-size: clamp(1rem, 3vw + 1rem, 4rem);
-  }
 
   .toggle-button{
     display: flex;
@@ -207,13 +209,16 @@ When a specific condition is met it runs the code*/
     text-align: center;
     /* MENU OPTION BORDERS */
     border:1px solid #e2e2e2;
-    border-width: 1px 1px 0 0;
+    border-width: 1px 1px 1px 1px;
   }
   .navbar-links li a{
     padding: .5rem 1rem;
   }
   .navbar-links.active{
     display: flex;
+  }
+  .toggle-button:hover{
+    transform: scale(0.8);
   }
 }
 /* End of Media Query*/
@@ -305,7 +310,8 @@ img {
   border-radius: 50%;
 }
 .fa:hover {           /* Hover Effect on Social Media Icons */
-  opacity: 0.7;
+  opacity: 0.8;
+  transform: scale(0.8);
 }
 /* Set a specific color for each brand */
 .fa-LinkedIn {
