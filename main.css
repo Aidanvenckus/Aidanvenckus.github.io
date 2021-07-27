@@ -168,8 +168,7 @@ body{
 
 /* This is called a media query
 When a specific condition is met it runs the code*/
-/*
-@media screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   .toggle-button{
     display: flex;
   }
@@ -197,7 +196,6 @@ When a specific condition is met it runs the code*/
     display: flex;
   }
 }
-*/
 /* End of Media Query*/
 
 /*  Another media query for later for large screens
