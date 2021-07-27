@@ -1,7 +1,7 @@
 
 
-/*html{font-family:sans-serif}*/
-html{font-family:Roboto}
+html{font-family:sans-serif}
+/*html{font-family:"Roboto"}*/
 
 /* FADE EFFECT can be added to class to have text/images fade in */
 .Fade{
@@ -87,7 +87,6 @@ html{font-family:Roboto}
 }
 /* End of TypeWriting Animation */
 
-
 /* BASIC FORMATING */
 body{
   margin: 0;
@@ -128,14 +127,24 @@ body{
   top:0;
   position: -webkit-sticky; 
   position: sticky;
+
+  /* HAVING THE MENU OPTIONS EQUAL SIZE */
+  width: 100%;
+  overflow:auto;
 }
+
 .navbar-links ul{ /* Working on the navbar links */
   margin: 0;
   padding: 0;
   display: flex;
+  width: 100%;
 }
 .navbar-links li{ /* Working on the list items to edit */
   list-style: none; /* removes list style (no dots or anything) */
+  text-align: center;
+  /* MENU OPTION BORDERS */
+  border:1px solid #e2e2e2;
+  border-width: 1px 1px 0 0;
 }
 .navbar-links li a{ /* Edit all the anchor tag styles */
   text-decoration: none;
@@ -169,6 +178,15 @@ body{
 /* This is called a media query
 When a specific condition is met it runs the code*/
 @media only screen and (max-width: 600px) {
+  /* Likely not nessesary here*/
+  .header_textBig{
+    position: relative;
+    font-family: "Roboto mono", monospace;
+    width: max-content;
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  }
+
+
   .toggle-button{
     display: flex;
   }
@@ -188,6 +206,9 @@ When a specific condition is met it runs the code*/
   }
   .navbar-links li{
     text-align: center;
+    /* MENU OPTION BORDERS */
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 0 0;
   }
   .navbar-links li a{
     padding: .5rem 1rem;
