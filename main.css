@@ -168,6 +168,7 @@ body{
 
 /* This is called a media query
 When a specific condition is met it runs the code*/
+/*
 @media screen and (max-width: 600px) {
   .toggle-button{
     display: flex;
@@ -192,10 +193,11 @@ When a specific condition is met it runs the code*/
   .navbar-links li a{
     padding: .5rem 1rem;
   }
-  .navbar-links.active{ /*Navbar being used*/
+  .navbar-links.active{
     display: flex;
   }
 }
+*/
 /* End of Media Query*/
 
 /*  Another media query for later for large screens
