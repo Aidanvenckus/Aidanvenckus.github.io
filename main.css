@@ -129,27 +129,25 @@ body{
 
 .navbar{  /* Working on the navigation bar */
   display: flex;  /* Use flexbox to have options appear side by side */
-  justify-content: space-between; /* Pushes them as far apart as possible */
-  align-items: center; /* Try stretch */
-  background-color: #333;
+  /*justify-content: space-evenly;*/
+  justify-content: space-between;
+  align-items: center;
+  background-color: #474747;
   color: white; /*Text color*/
-  overflow:hidden;
   margin:0;
   padding:0;
   top:0;
   position: -webkit-sticky; 
   position: sticky;
 
-  /* HAVING THE MENU OPTIONS EQUAL SIZE */
-  width: 100%;
-  overflow:auto;
 }
-
 .navbar-links ul{ /* Working on the navbar links */
   margin: 0;
   padding: 0;
   display: flex;
   width: 100%;
+  color: white;
+  text-decoration: none;
 }
 .navbar-links li{ /* Working on the list items to edit */
   list-style: none; /* removes list style (no dots or anything) */
@@ -157,16 +155,20 @@ body{
   /* MENU OPTION BORDERS */
   border:1px solid #e2e2e2;
   border-width: 1px 1px 1px 1px;
+  box-sizing: border-box;
+  background-color: #333;
 }
 .navbar-links li a{ /* Edit all the anchor tag styles */
   text-decoration: none;
   color:white;
   padding: 1rem;
   display: block;
+  box-sizing: border-box; 
 }
 .navbar-links li:hover{  /*Changing what happens when hovering mouse over list items*/
   background-color: #555;
   transform: scale(0.8);
+  box-sizing: border-box
 }
 
 /* Mobile menu drop down bar*/
@@ -175,7 +177,6 @@ body{
   top: 1rem;
   right: 1rem;
   display: none; /* Have it not display by default*/
-  /*We want it to only display when we have smaller screens*/
   flex-direction: column; /* menu is a collumn (dropdown) menu*/
   justify-content: space-between; /* maximize space */
   width: 30px;
