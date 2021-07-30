@@ -1,6 +1,8 @@
 
 
-html{font-family:sans-serif}
+html{
+  font-family:sans-serif
+}
 /*html{font-family:"Roboto"}*/
 
 /* FADE EFFECT can be added to class to have text/images fade in */
@@ -94,6 +96,8 @@ body{
   font-size: 1.8rem;
   /*font-size: 28px;*/
 }
+
+
 .link{
   background-color: #474747;
   color: white;
@@ -139,7 +143,6 @@ body{
   top:0;
   position: -webkit-sticky; 
   position: sticky;
-
 }
 .navbar-links ul{ /* Working on the navbar links */
   margin: 0;
