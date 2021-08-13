@@ -317,8 +317,8 @@ img {
  
  /* SOCIAL MEDIA CIRCLES*/
 .fa {                 /* Social Media Icon structure */
-  padding: 20px;
-  font-size: 30px;
+  padding: 1.5vw;
+  font-size: 1.5vw;
   width: 30px;
   text-align: center;
   text-decoration: none;
