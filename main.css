@@ -3,7 +3,6 @@
 html{
   font-family:sans-serif
 }
-/*html{font-family:"Roboto"}*/
 
 /* FADE EFFECT can be added to class to have text/images fade in */
 .Fade{
@@ -33,8 +32,6 @@ html{
   0% {opacity:0.3;}
   100% {opacity:1;}
 }
-/* END OF FADE */
-
 
 /* TypeWriting Animation */
 :root {
@@ -87,16 +84,6 @@ html{
       steps(var(--typewriterCharacters)) 1s forwards,
     blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
-/* End of TypeWriting Animation */
-
-/* BASIC FORMATING */
-body{
-  margin: 0;
-  padding: 0;
-  font-size: 1.8rem;
-  /*font-size: 28px;*/
-}
-
 
 .link{
   background-color: #474747;
@@ -122,7 +109,6 @@ body{
   position: relative;
   font-family: "Roboto mono", monospace;
   width: max-content;
-  /*font-size: clamp(1rem, 3vw + 1rem, 4rem);*/
   font-size: 4vw;
   color:white;
 }
@@ -133,8 +119,8 @@ body{
 
 .navbar{  /* Working on the navigation bar */
   display: flex;  /* Use flexbox to have options appear side by side */
-  /*justify-content: space-evenly;*/
   justify-content: space-between;
+  /*justify-content: space-evenly;*/
   align-items: center;
   background-color: #474747;
   color: white; /*Text color*/
@@ -195,58 +181,6 @@ body{
   transform: scale(0.8);
 }
 
-/* This is called a media query
-When a specific condition is met it runs the code*/
-@media only screen and (max-width: 600px) {
-
-  .header{ /* Helps the Toggle button fit on header */
-    background-color: #474747;
-    padding-left: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  
-  .toggle-button{
-    display: flex;
-  }
-  .navbar{
-    flex-direction: column;
-    align-items: flex-start;
-    overflow: auto;
-    position:relative 
-  }
-  .navbar-links{
-    display: none;
-    width: 100%;
-  }
-  .navbar-links ul{
-    width: 100%;
-    flex-direction: column;
-  }
-  .navbar-links li{
-    text-align: center;
-    /* MENU OPTION BORDERS */
-    border:1px solid #e2e2e2;
-    border-width: 1px 1px 1px 1px;
-  }
-  .navbar-links li a{
-    padding: .5rem 1rem;
-  }
-  .navbar-links.active{
-    display: flex;
-  }
-  .toggle-button:hover{
-    transform: scale(0.8);
-  }
-}
-/* End of Media Query*/
-
-/*  Another media query for later for large screens
-@media screen and (min-width: 1200px) {
-
-}
-*/
-
 .footer{
   background-color: #474747;
   padding-left: 20px;
@@ -305,21 +239,116 @@ img {
   flex-basis: 80%
 }
 
-.text{
-  padding-left: 10%;
-  padding-right: 10%;
-  font-size: 2.5vw;        /* vw = viewpoint width which will scale with window size*/
-}
-
 .currentpage {  
   background-color: #0096FF;  
+}
+
+/* Phone Size Adjust  */
+@media screen and (max-width: 767px) {
+  .header{ /* Helps the Toggle button fit on header */
+    background-color: #474747;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .toggle-button{
+    display: flex;
+  }
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: auto;
+    position:relative 
+  }
+  .navbar-links{
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li{
+    text-align: center;
+    /* MENU OPTION BORDERS */
+    border:1px solid #e2e2e2;
+    border-width: 1px 1px 1px 1px;
+  }
+  .navbar-links li a{
+    padding: .5rem 1rem;
+  }
+  .navbar-links.active{
+    display: flex;
+  }
+  .toggle-button:hover{
+    transform: scale(0.8);
+  }
+  .text{
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 14px;        /* vw = viewpoint width which will scale with window size*/
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  .menu-font{
+    font-size: 18px;
+  }
+  .fa {                 /* Social Media Icon structure */
+    padding: 14px;
+    font-size: 14px;
+    width: 20px;
+  }
+}
+
+/* Adjusting for Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .text{
+    padding-left: 13%;
+    padding-right: 13%;
+    font-size: 18px;        /* vw = viewpoint width which will scale with window size*/ 
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  .menu-font{
+    font-size: 22px;
+  }
+  .fa {                 /* Social Media Icon structure */
+    padding: 16px;
+    font-size: 16px;
+    width: 25px;
+  }
+}
+
+/* Adjusting for Desktops */
+@media screen and (min-width:1024px){
+  .text{
+    padding-left: 16%;
+    padding-right: 16%;
+    font-size: 22px;        /* vw = viewpoint width which will scale with window size*/
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+  }
+  .menu-font{
+    font-size: 28px;
+  }
+  .fa {                 /* Social Media Icon structure */
+    padding: 20px;
+    font-size: 20px;
+    width: 30px;
+  }
 }
  
  /* SOCIAL MEDIA CIRCLES*/
 .fa {                 /* Social Media Icon structure */
-  padding: 1.5vw;
-  font-size: 1.5vw;
-  width: 30px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
