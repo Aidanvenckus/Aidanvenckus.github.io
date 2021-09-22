@@ -55,6 +55,99 @@
 
     <div class="Pad"></div>
 
+    <center><h2>Recent Updates:</h2></center>
+    <div class="card">
+      <div style="clear:both">
+      <h2 style="float: left">Air Traffic App Update </h2> <h5 style="float: right">Sep 21, 2021</h5>
+      </div>
+      <center><img style="border-radius: 20px;" src="Images/Plane3_2021-09-19.png"></center>
+      <i>*bright-dark red triangles are high-low elevation airplanes, green triangle is user location, blue triangles are landed planes</i> <br/> <br/>
+      <center><img style="border-radius: 20px;" src="Images/Plane_2021-09-21.png"></center>
+      <i>*Map Legend can be seen at the top</i> <br/> <br/>
+      <center><img style="border-radius: 20px;" src="Images/Plane2_2021-09-19.png"></center> <br/>
+      <center><img style="border-radius: 20px;" src="Images/Plane_2021-09-19.png"></center> <br/>
+      <p>
+        New update with the Air Traffic App includes planes showing their direction as a result of making the plane object into triangles and then 
+        doing transformation(rotation) on the object per each planes directional data. The Planes also show elevation by different shades of red by 
+        doing rgba(variable,0,0,1) when variable=(elevation*max_color_hue/highest_elevation). Another quality that was implemented was if the plane 
+        was landed which was represented as a boolean value in the data.
+      </p>
+      <p>
+        My favoite thing that I implemented so far was that when you hover on each one of the react plane objects I used a "onMouseEnter()" and 
+        "onMouseLeave()" event to have a box apear with data of the planes numerical registration ID, latitude, longitude, elevation(m), and speed(m/s).
+      </p>
+      <p>
+        Next steps in the Air Traffic App will be implementing the app to display airports which will likely require another API, database, or JSON file with the info. 
+        Additionally I am in the progress of adding heatmaps to replace plane objects when an button is clicked which would show an interesting perspective of air traffic. 
+        Lastly, I would also like to implement as an extra but not required feature of a unique speed and elevation change distinction such as another color, outline, or animation 
+        (not actually sure what I plan to do yet) and I would like to display trails of planes (past flight) which will likely be small white lines or dots.
+      </p>
+      Most Recent Link to <a class="link" href="https://aidanvenckus.netlify.app"> Air Traffic App </a>
+    </div>
+
+    <div class="card">
+      <h2 style="float: left">Air Traffic App Update </h2> <h5 style="float: right">Sep 10, 2021</h5>
+      <center><img style="border-radius: 20px;" src="Images/Plane2_2021-09-10.png"></center> <br/>
+      <center><img style="border-radius: 20px;" src="Images/Plane_2021-09-10.png"></center>
+      <i>*Red dots are airplane positions, green dot is user location</i> <br/>
+      <p>
+        New update with the Air Traffic App include after researching for some time using the <a class="link" href="https://openskynetwork.github.io/opensky-api/">OpenSky Network API</a> 
+        which utilizes my original choice of API the <a class="link" href="https://www.adsbexchange.com/data/">ADS-B API</a> however this API requires payment so I went with the free alternitive 
+        because I am doing this just for fun&#47;practice&#47;hobbie.
+      </p>
+      <p>
+        The OpenSky Network API which relies on ADS-B API, tracks 
+        each aircraft (transponder) to a unique address (ICAO 24-bit) which is an aircraft&#39;s unique identifier (sometimes called 
+        mode-s and is the aircraft&#39;s certificate of registration). The API then gathers the elevation, latitude, longitude, 
+        direction, and other characteristics from other APIs and volenteers across the world who supply the data through Raspberry 
+        Pis with an SDR and Antenna, so military and other filtered aircraft can be often seen (public tracking).
+      </p>
+      <p>
+        With the API I was able to access each aircraft's icao24(Unique ICAO 24bit address of transponder), 
+        callsign, origin country, time per position, last contact, longitude, latitude, latitude(barometer and geo), status if 
+        its landed, velocity(m/s), direction, rate of elevation change, sensors, squawk, spi(special purpose indicator), and what 
+        sorce is tracking it. For the time being I only got the the aircraft location to be displayed.
+      </p>
+      <p>
+        Next steps in the Air Traffic App will be to implement more of the data onto the air traffic display. The data I plan to use 
+        first will be to change the shade of the dots based on elevation diffrences, show direction by using an object other than a circle 
+        and the data I have, have an indicator if the plane has landed.
+      </p>  
+      Most Recent Link to <a class="link" href="https://aidanvenckus.netlify.app"> Air Traffic App </a>
+    </div>
+
+    <div class="card">
+      <h2 style="float: left">Air Traffic App (previously: Geolocation API)</h2> <h5 style="float: right">Sep 5, 2021</h5>
+      <center><img style="border-radius: 20px;" src="Images/Location_2021-09-5.png"></center>
+      <i>*red dot is user location</i> <br/>
+      <p>
+        The Air Traffic App first started as a progression from the Geolocation App. I started the 
+        Geolocation App as a way to practice my newly founded skills in React and Javascript while 
+        practicing working with APIs.
+      </p>
+      <p> 
+        The current version uses the 
+        <a class="link" href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API">Geolocation API</a> by Mozilla which asks 
+        for your location permission and then returns it as a latitude, longitude, and accuracy based on your 
+        your using your computer or phones GPS if available. If not avaliable, it uses its WIFI signal. 
+        If using a mobile signal, the position is triangulated by cell towers to work out the closest latitude 
+        and longitude it can determine.
+      <p>
+        The App also works with the 
+        <a class="link" href="https://github.com/google-map-react/google-map-react">google-maps-react API</a> 
+        which is a subset of 
+        google maps API but, uses a smaller portion of the full API and allows for react objects to be added 
+        (will be important when planes need to be added).
+      </p>  
+      <p>
+        Although this was the end of the Geolocation App, I 
+        used the Geolocation code to start a Plane Traffic App which will need plane location data for the next step.
+      </p>
+      Most Recent Link to <a class="link" href="https://aidanvenckus.netlify.app"> Air Traffic App </a>
+    </div>
+
+    <!-- When there are too many updates on the first page add a button that makes the later cards turn off display:none -->
+
     <div class="footer">  
       <b class="footer_textBig"> Contact:</b>
       <br>
