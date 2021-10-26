@@ -1,8 +1,6 @@
 ToDo:
 
-Write about Projects
-Add Another page for Hobbies
-Add Page for Circuits Designed
+Have it where if you onclick the PCB picture it shows the backside instead of front
 
 
 !!!Need to do javascript to count # of character in each title and use typewriter

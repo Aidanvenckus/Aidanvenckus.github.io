@@ -47,6 +47,70 @@
 
     <!--CAPSTONE: MECHATRONICS-->
     <hr>
+    <!--Mech Lab 2-->
+    <p><strong class = "text" > Mechatronics Lab2:</strong></p>
+
+    <center> 
+      <b class = "text"> Lasercutting Bot Chassis: </b> <br/>
+      <div class="container">
+          <img class="image" src="Gifs/LaserCut.gif"> 
+      </div>
+    </center>
+    <center> 
+    <b class = "text"> Practice Bot Fully Assembled: </b> <br/>
+      <img class= "image"  style="width: 70%; height: auto;"
+      src="Images/Bot_Iso.png"> </img> <br/>
+      <img class= "image"  style="width: 70%; height: auto;"
+      src="Images/Bot_Front.png"> </img> <br/>
+    </center>
+
+    <p class="text">
+      This is the Bot I created by using solidworks to design the individual parts, assembled them together and made 
+      sure all the parts fit together. I then put all the parts on one plane and created a cutout design to then send 
+      to the laser cutter. 
+    </p>
+
+    (More detial will be added later...)
+    
+    <hr>
+    <!--Mech Lab 1-->
+    <p><strong class = "text" > Mechatronics Lab1:</strong></p>
+    
+    <center> 
+    <b class = "text"> Beacon Demonstration: </b> <br/>
+    <div class="container">
+      <center> <img class="image" src="Gifs/Beacon.gif"> </center>  
+    </div>
+
+    
+    <b class = "text"> Beacon Circuit: </b> <br/>
+      <img class= "image"  style="width: 70%; height: auto;"
+      src="Images/BeaconCircuit.jpeg"> </img> <br/>
+    </center>
+
+    <p class="text">
+      This was the final product of creating the Beacon circuit that could detect an IR LED from over 20 feet away.
+    </p>
+    <center class="text"> <b> Beacon Detector Stages: </b> </center>
+    <dl class="text">
+      <dt><u>Input Stage</u></dt>
+      <dd>- Starts with a Photoresistive Transistor which gives a voltage based on IR light levels and flows through a Transresistive op-amp</dd><br/>
+      <dt><u>Amplification Stage</u></dt>
+      <dd>- Takes the Input and Amplifies the signal with 6 (11x gain) non-inverting op-amps</dd><br/>
+      <dt><u>Filtering Stage</u></dt>
+      <dd>- With this amplified signal we filter out anything but the 2khz filter with a 2 stage 4th order butterworth bandpass</dd><br/>
+      <dt><u>Peak Detection Stage</u></dt>
+      <dd>- The newly filtered signal goes to a peak detector to make sure we have high wave outputs</dd><br/>
+      <dt><u>Comparator and hysterisis Stage</u></dt>
+      <dd>- The comparator takes the signal and turns it into a digital signal (1 High or 0 Low) by the use of voltage thresholds and hysterisis</dd><br/>
+      <dt><u>Output Stage</u></dt>
+      <dd>- The digital signal now gets passed to a buffer and LED (Green) to be able to show the resulting output</dd><br/>
+    </dl>
+
+    (More detial will be added later...)
+
+    <hr>
+    <!--Mech Lab 0-->
     <p><strong class = "text" > Mechatronics Lab0:</strong></p>
 
     <center> 
