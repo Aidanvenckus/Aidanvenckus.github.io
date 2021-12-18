@@ -46,14 +46,35 @@
 
     <!--Beacon Detector-->
     <hr>
-    <p><b class = "text" > Beacon Detector:</b></p>
+    <p><b class = "text" > Beacon Detector v2:</b></p>
 
     <center> 
-      <b class = "text"> Beacon Schematic: </b> <br/>
-      <img class= "image"  style="width: 80%; height: auto;" src="Images/BeaconTraces.png"> </img> <br/>
+      <b class = "text"> Beacon Detector v2 Schematic: </b> <br/>
+      <img class= "image"  style="width: 50%; height: auto;"
+      src="Images/PCBs/Beacon2_PCB_Traces.png"> </img> <br/>
       <br/>
-      <b class = "text"> Beacon PCB: </b> <br/>
-      <img class= "image"  style="width: 80%; height: auto;"
+      <b class = "text"> Beacon Detector v2 PCB: </b> <br/>
+      <img class= "image"  style="width: 50%; height: auto;"
+      src="Images/PCBs/Beacon2_PCB.png"> </img> <br/>
+    </center>
+
+    <p class="text">
+      I needed to revise my previous Beacon Detector because I had made a few mistakes that were worth designing a 
+      new PCB for. I had made my traces too small which led to some of the ones that I used to have traces scratched 
+      which acts like a cut wire (I changed this after ordering). In addition my previous design had a couple op amps in positive feeback accidently in 
+      addition to having additional unnessesary gain stages (from 6 to 4). Lastly I did a complete size reduction and 
+      compacted all the components by moving them and utilizing all the op amp ports.
+    </p>
+
+    <p><b class = "text" > Beacon Detector v1:</b></p>
+
+    <center> 
+      <b class = "text"> Beacon Detector v1 Schematic: </b> <br/>
+      <img class= "image"  style="width: 50%; height: auto;"
+      src="Images/BeaconTraces.png"> </img> <br/>
+      <br/>
+      <b class = "text"> Beacon Detector v1 PCB: </b> <br/>
+      <img class= "image"  style="width: 50%; height: auto;"
       src="Images/BeaconPCB.png"> </img> <br/>
     </center>
 
@@ -79,23 +100,71 @@
       <dd>- The digital signal now gets passed to a buffer and LED to be able to show the resulting output</dd><br/>
     </dl>
  
-    <br/>
-    <p><b class="text"> ******** PCB:</b></p>
+    <br>
+
+    <hr>
+    <p><b class="text"> Trackwire PCB:</b></p>
 
     <center> 
-      <b class = "text"> ******** Schematic: </b> <br/>
-      <img class= "image"  style="width: 80%; height: auto; background-color: grey;" src=""> </img> <br/>
+      <b class = "text"> Trackwire Schematic: </b> <br/>
+      <img class= "image"  style="width: 50%; height: auto;"
+      src="Images/PCBs/Trackwire_PCB_Traces.png"> </img> <br/>
       <br/>
 
-      <b class = "text"> ******** PCB: </b> <br/>
-      <img class= "image"  style="width: 80%; height: auto; background-color: grey;" src=""> </img> <br/>
+      <b class = "text"> Trackwire PCB: </b> <br/>
+      <img class= "image"  style="width: 50%; height: auto;"
+      src="Images/PCBs/Trackwire_PCB.png"> </img> <br/>
       <br/>
     </center>
 
     <p class="text">
-      This is a secret project because I am giving it out as a gift near the holidays, it will be revealed later.
+      This was a trackwire detector which I used on my capstone autonomous ground robot. It worked based on a inductor that 
+      would try to read the magnetic field of a wire with osilating current running through it, take the signal, amplify it, 
+      then sample the signal through a peak detector and comparator. This allowed the signal to go from analog to a digital 
+      high and low to be read through an LED and in most cases the microcontroller IO.
     </p>
 
+    <br>
+
+    <hr>
+    <p><b class="text"> Ornament PCB:</b></p>
+
+    <center> 
+      <b class = "text"> Ornament Schematic: </b> <br/>
+      <img class= "image"  style="width: 50%; height: auto;"
+      src="Images/PCBs/Ornament_PCB_Traces.png"> </img> <br/>
+      <br/>
+
+      <b class = "text"> Ornament PCB Front: </b> <br/>
+      <img class= "image"  style="width: 50%; height: auto;"
+      src="Images/PCBs/Ornament_PCB_Front.png"> </img> <br/>
+      <br/>
+
+      <b class = "text"> Ornament PCB Back: </b> <br/>
+      <img class= "image"  style="width: 50%; height: auto;"
+      src="Images/PCBs/Ornament_PCB_Back.png"> </img> <br/>
+      <br/>
+
+      <b class = "text"> Ornament PCB Christmas: </b> <br/>
+      <img class= "image"  style="width: 50%; height: auto;"
+      src="Images/PCBs/Ornament_PCB_Red_Green.png"> </img> <br/>
+      <br/>
+
+      <b class = "text"> Ornament on Tree: </b> <br/>
+      <div class="container">
+        <center> <img class = "padding_designs" style="width: 80%; height: auto;" src="Gifs/Ornament_PCB.gif"> </center>
+      </div>
+      <br>
+
+    </center>
+
+    <p class="text">
+      This year for the holidays I gave a few Ornament PCBs to my family and friends. The PCB ran on a 9V battery and would flash its 
+      LEDs based on the resistance of the potentiometer on it connected to the 555 timer. This allowed for the speed of the flashing to 
+      be configurable and custom. In addition to this you are able to change out the LEDs for other colors but the resistors would need 
+      to be changed as different colored LEDs require different voltages to run. I changed the schematic after ordering the PCB as I started 
+      to increase the size of my traces on the PCB in addition to the size of the power and ground traces to be larger.
+    </p>
 
 
     <br>
