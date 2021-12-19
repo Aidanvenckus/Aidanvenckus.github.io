@@ -245,6 +245,11 @@ img {
   flex-basis: 80%
 }
 
+.img_small {
+  width: 30%;
+    height: auto;
+}
+
 .img_rounding {
   border-radius: 20px;
 }

@@ -40,13 +40,43 @@
 
     <!-- INTRODUCTION -->
     <p class="text">
-      Here you will find PCBs I have designed using Eagle or KiKad.
-      <br/>
+      Here you will find PCBs I have designed using Eagle or KiKad.<br>
     </p>
 
+      <div>
+        <figure style="width: 15%; float: left; text-align: center;">
+          <a href="#Beacon2">
+          <img class="image img_rounding" src="Images/PCBs/Beacon2_PCB_Traces.png">
+          </a> 
+           <figcaption>Beacon Detector v2 PCB</figcaption>
+        </figure>
+
+        <figure style="width: 15%; float: left; text-align: center;">
+          <a href="#Beacon1">
+          <img class="image img_rounding" src="Images/PCBs/BeaconTraces.png"> </img>
+          </a>
+          <figcaption>Beacon Detector v1 PCB</figcaption>
+        </figure>
+
+        <figure style="width: 15%; float: left; text-align: center;">
+          <a href="#Trackwire">
+          <img class="image img_rounding" src="Images/PCBs/Trackwire_PCB_Traces.png"> </img>
+          </a>
+          <figcaption>Trackwire PCB</figcaption>
+        </figure>
+
+        <figure style="width: 15%; text-align: center;">
+          <a href="#Ornament">
+          <img class="image img_rounding" src="Images/PCBs/Ornament_PCB_Traces.png"> </img>
+          </a>
+          <figcaption>Ornament PCB</figcaption>
+        </figure>
+     </div>
+  
+    <br/>
     <!--Beacon Detector-->
-    <hr>
-    <p><b class = "text" > Beacon Detector v2:</b></p>
+    <hr id="Beacon2">
+    <p> <b class="text"> Beacon Detector v2:</b></p>
 
     <center> 
       <b class = "text"> Beacon Detector v2 Schematic: </b> <br/>
@@ -56,6 +86,10 @@
       <b class = "text"> Beacon Detector v2 PCB: </b> <br/>
       <img class= "image img_padding"
       src="Images/PCBs/Beacon2_PCB.png"> </img> <br/>
+      <br/>
+      <b class = "text"> Beacon Detector v1 vs v2 PCB: </b> <br/>
+      <img class= "image img_padding"
+      src="Images/PCBs/PCB_Compare.jpg"> </img> <br/>
     </center>
 
     <p class="text">
@@ -66,16 +100,17 @@
       compacted all the components by moving them and utilizing all the op amp ports.
     </p>
 
-    <p><b class = "text" > Beacon Detector v1:</b></p>
+    <hr id="Beacon1">
+    <p> <b class="text"> Beacon Detector v1: </b></p>
 
     <center> 
       <b class = "text"> Beacon Detector v1 Schematic: </b> <br/>
       <img class= "image img_padding"
-      src="Images/BeaconTraces.png"> </img> <br/>
+      src="Images/PCBs/BeaconTraces.png"> </img> <br/>
       <br/>
       <b class = "text"> Beacon Detector v1 PCB: </b> <br/>
       <img class= "image img_padding"
-      src="Images/BeaconPCB.png"> </img> <br/>
+      src="Images/PCBs/BeaconPCB.png"> </img> <br/>
     </center>
 
     <p class="text">
@@ -102,8 +137,8 @@
  
     <br>
 
-    <hr>
-    <p><b class="text"> Trackwire PCB:</b></p>
+    <hr id="Trackwire">
+    <p><b class="text" id="#Trackwire"> Trackwire PCB:</b></p>
 
     <center> 
       <b class = "text"> Trackwire Schematic: </b> <br/>
@@ -126,8 +161,26 @@
 
     <br>
 
-    <hr>
-    <p><b class="text"> Ornament PCB:</b></p>
+    <center class="text"> <b> Trackwire Stages: </b> </center>
+    <dl class="text">
+      <dt><u>Input Stage</u></dt>
+      <dd>- Starts with a a tank circuit which is a resonant oscillator that gets the signal from the track wire through it’s inductor.
+      The capacitor fills up with charge and it oscillates because the capacitor gives charge to the inductor and then the capacitor flips polarity (this causes a sine wave)</dd><br/>
+      <dt><u>Amplification Stage</u></dt>
+      <dd>- Takes the Input and Amplifies the signal with 3 (11x gain) non-inverting op-amps</dd><br/>
+      <dt><u>Peak Detection Stage</u></dt>
+      <dd>- The signal goes to a peak detector to make sure we have high wave outputs</dd><br/>
+      <dt><u>Comparator and hysterisis Stage</u></dt>
+      <dd>- I took out the comparator for this PCB because I wanted to direcly sample the analog signal through a ADC and be able 
+        to set the comparator and hysterisis values through software</dd><br/>
+      <dt><u>Output Stage</u></dt>
+      <dd>- The signal now gets passed to a buffer and LED to be able to show the resulting output</dd><br/>
+    </dl>
+ 
+    <br>
+
+    <hr id="Ornament">
+    <p><b class="text" id="#Ornament"> Ornament PCB:</b></p>
 
     <center> 
       <b class = "text"> Ornament Schematic: </b> <br/>
