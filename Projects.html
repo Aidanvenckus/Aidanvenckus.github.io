@@ -45,6 +45,58 @@
       The code of the projects that I've done at UC Santa Cruz are mostly redacted in order to maintain academic integrity.
     </p>
 
+    <!--PROJECT: From Scratch UAV-->
+    <hr>
+    <p><strong class = "text" > Designing Flight - UAV from Scratch:</strong></p>
+    <p class="text">
+      In this project I designed and built a UAV as a start to my goal of creating a long distance autonomous drone that can be retrofitted for various tasks.
+      I started this project by deciding on what type of drone I wanted to build, my favorite of which are fixed wing aircraft that have a glider type of airframe 
+      because they are more fun to fly. I decided on doing a 4ft wingspan fixed wing single motor design that would have the motor mounted on top of it to allow for 
+      gentler crashes and easier training. The firmware of the flight controller is ardupilot with mission planner installed to utilize the sensors and data avaliable.
+    </p>
+
+    <center> 
+    <img class= "image img_padding" src="Images/UAV/UAV.png"> </img> <br>
+    <i>*UAV running on Ardupilot Mission Planner</i> <br/> <br/>
+    <img class= "image img_padding" src="Images/UAV/UAV_Crashed.png"> </img> <br>
+    <i>*UAV has taken a few Hits</i> <br/> <br/>
+    <img class= "image img_padding" src="Images/UAV/UAV_Disassembled.png"> </img> <br>
+    <i>*Building the UAV</i> <br/> <br/>
+    </center>
+    <br>
+    <center><b> UAV Specs: </b> </center>
+    <dl class="text">
+      <dt><u>Flight Controller - Matek F405 Wing Flight Controller</u></dt>
+        <dd>- 2x Motors, 7x Servos outputs, 2x I2C</dd> 
+        <dd>- 3x LEDs for FC STATUS</dd>
+        <dd>- accelerometer + gyro + barometer + blackbox</dd>
+        <dd>- 168MHz STM32F405</dd>
+        <dd>- INAV operating system</dd>
+        <center><img class= "image img_padding" src="Images/UAV/Flight_Controller.png"> </img></center> <br>
+        <br/>
+      <dt><u>Transmitter - TX16S</u></dt>
+        <dd>- 16CH Radio Transmitter</dd>
+        <dd>- Multi-Protocol OpenTX</dd>
+        <center><img class= "image img_padding" src="Images/UAV/TX16S.png"> </img></center> <br>
+        <br/>
+      <dt><u>Reciever - RadioMaster R86C</u></dt>
+        <dd>- Channels: 6 channels (PWM), 8 channels (SBUS)</dd>
+        <dd>- Frequency range: 2400-2483.5Mhz</dd>
+        <dd>- Signal format: Frsky D8 Compatible</dd>
+        <center><img class= "image img_padding" src="Images/UAV/R86C.png"> </img></center> <br>
+        <br/>
+      <dt><u>GPS - Matek GPS Module SAM-M8Q Mini</u></dt>
+        <dd>- Small (15cm x 25cm), Low power, light (7g) </dd>
+        <center><img class= "image img_padding" src="Images/UAV/GPS.png"> </img></center> <br>
+        <br/>
+
+      <dt><u>Lipo Battery 11.1V 2200mAh 3S 25C </u></dt><br/>
+      <dt><u>1400KV Brushless Motor + 30Amp ESC </u></dt><br/>
+      <dt><u>SG90 Servos (9 grams)</u></dt><br/>
+      <dt><u>8060 Propeller </u></dt><br/>
+
+      </dl>
+
     <!--CAPSTONE: MECHATRONICS-->
     <hr>
     <!--Mech Lab 2-->
@@ -52,17 +104,18 @@
 
     <center> 
       <b class = "text"> Lasercutting Bot Chassis: </b> <br/>
-      <div class="container">
-          <img class="image" src="Gifs/LaserCut.gif"> 
+      <div class="container img_padding">
+          <img class="image" src="Gifs/LaserCut.gif">
       </div>
     </center>
+
     <center> 
     <b class = "text"> Practice Bot Fully Assembled: </b> <br/>
-      <img class= "image"  style="width: 70%; height: auto;"
+      <img class= "image img_padding"
       src="Images/Bot_Iso.png"> </img> <br/>
-      <img class= "image"  style="width: 70%; height: auto;"
+      <img class= "image img_padding"
       src="Images/Bot_Front.png"> </img> <br/>
-      <img class= "image"  style="width: 70%; height: auto;"
+      <img class= "image img_padding"
       src="Images/Bot_Solidworks.jpg"> </img> <br/>
     </center>
 
@@ -80,13 +133,13 @@
     
     <center> 
     <b class = "text"> Beacon Demonstration: </b> <br/>
-    <div class="container">
+    <div class="container img_padding">
       <center> <img class="image" src="Gifs/Beacon.gif"> </center>  
     </div>
 
     
     <b class = "text"> Beacon Circuit: </b> <br/>
-      <img class= "image"  style="width: 70%; height: auto;"
+      <img class= "image img_padding"
       src="Images/BeaconCircuit.jpeg"> </img> <br/>
     </center>
 
@@ -144,7 +197,7 @@
     <hr>
     <p><strong class = "text" > "TinyScope" Osilliscope:</strong></p>
 
-    <center> <img class= "padding_designs image" src="Images/Tinyscope.png" ></img> </center>
+    <center> <img class= "image img_padding" src="Images/Tinyscope.png" ></img> </center>
     
 
     <p class="text">
@@ -163,36 +216,36 @@
           dt: is description term 
           dd: description definition -->
     <dl class="text">
-    <dt>2 Waveform Channels</dt>
+    <dt><u>2 Waveform Channels</u></dt>
     <dt>Sampling rate of 250k samples/second for all 4 ADC channels.</dt>
-    <dd>- 2 Channels for Analog Signals</dd>
-    <dd>- 2 Channels for Potentiometers’ Readings</dd>
-
-    <dt>2 Waveform Modes</dt>
-    <dd>- Free-Running</dd>
-    <dd>- Triggered</dd>
-
-    <dt>User Input to alter Waveform</dt>
-    <dd>- Xscaling</dd>
-    <dd>- Yscaling</dd>
-    <dd>- Trigger Level</dd>
-    <dd>- Trigger Slope</dd>
-    <dd>- Waveform Stopped / Started</dd>
-
-    <dt>Frequency Calculation</dt>
-    <dt>Scrolling Waveforms (via Potentiometers)</dt>
+      <dd>- 2 Channels for Analog Signals</dd>
+      <dd>- 2 Channels for Potentiometers’ Readings</dd>
+      <br>
+    <dt><u>2 Waveform Modes</u></dt>
+      <dd>- Free-Running</dd>
+      <dd>- Triggered</dd>
+      <br>
+    <dt><u>User Input to alter Waveform</u></dt>
+      <dd>- Xscaling</dd>
+      <dd>- Yscaling</dd>
+      <dd>- Trigger Level</dd>
+      <dd>- Trigger Slope</dd>
+      <dd>- Waveform Stopped / Started</dd>
+      <br>
+    <dt><u>Frequency Calculation</u></dt>
+    <dt><u>Scrolling Waveforms (via Potentiometers)</u></dt>
     </dl>
   
     
     <center>
       <b class = "text"> TinyScope Schematic: </b> <br>
-      <img class= "padding_designs image" src="Images/Tinyscope_Schematic.png"> </img> <br>
+      <img class= "image img_padding" src="Images/Tinyscope_Schematic.png"> </img> <br>
 
       <b class = "text"> TinyScope FlowChart: </b> <br>
-      <img class= "padding_designs image" src="Images/TinyscopeFlow.png"> </img> <br>
+      <img class= "image img_padding" src="Images/TinyscopeFlow.png"> </img> <br>
 
       <b class = "text"> TinyScope Overview: </b> <br>
-      <img class= "padding_designs image" src="Images/Tinyscope_Overview.png"> </img> <br>
+      <img class= "image img_padding" src="Images/Tinyscope_Overview.png"> </img> <br>
     </center>
 
     <!--PROJECT: ELECTRIC BIKE-->
@@ -202,25 +255,12 @@
       In progress...
     </p> -->
 
-    <!--PROJECT: From Scratch UAV-->
-    <hr>
-    <p><strong class = "text" > Designing Flight - From Scratch UAV:</strong></p>
-    <p class="text">
-      In this project I designed and built a UAV as a start to my goal of creating a long distance autonomous drone that can be retrofitted for various tasks.
-      I started this project by deciding on what type of drone I wanted to build, my favorite of which are fixed wing aircraft that have a glider type of airframe 
-      because they are more fun to fly. I decided on doing a 4ft wingspan fixed wing single motor design that would have the motor mounted on top of it to allow for 
-      gentler crashes and easier training.
-    </p>
-
-    
-
-
     <!--PROJECT: PYTHON-->
-    <hr>
+    <!-- <hr>
     <p><strong class = "text" > Python Projects:</strong></p>
     <p class="text">
       Python Dungeon Crawler In Progress...
-    </p>
+    </p> -->
     
     <!-- Python 
     <iframe height="600px" width="100%" src="https://replit.com/@AidanVenckus/PyDungeonCrawl?lite=true&amp;outputonly=1" scrolling="yes" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">

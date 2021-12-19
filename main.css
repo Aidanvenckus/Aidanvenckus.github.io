@@ -217,10 +217,7 @@ html{
   border: 0.5px solid gray;
 }
 
-.padding_designs{
-  width: 50%;
-  height: auto;
-}
+
 
 .padding_designstext{
   margin: 0 150 20 150;          /* Top Right Bottom Left */
@@ -248,12 +245,22 @@ img {
   flex-basis: 80%
 }
 
+.img_rounding {
+  border-radius: 20px;
+}
+
 .currentpage {  
   background-color: #0096FF;  
 }
 
 /* Phone Size Adjust  */
 @media screen and (max-width: 767px) {
+
+  .img_padding{
+    width: 90%;
+    height: auto;
+  }
+
   .vid{
     width: auto;
     height: 240px;
@@ -323,6 +330,12 @@ img {
 
 /* Adjusting for Tablets */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .img_padding{
+    width: 70%;
+    height: auto;
+  }
+
   .vid{
     width: auto;
     height: 400px;
@@ -353,6 +366,12 @@ img {
 
 /* Adjusting for Desktops */
 @media screen and (min-width:1024px){
+
+  .img_padding{
+    width: 50%;
+    height: auto;
+  }
+
   .vid{
     width: auto;
     height: 520px;
