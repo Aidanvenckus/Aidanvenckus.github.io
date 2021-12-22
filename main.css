@@ -239,8 +239,6 @@ html{
   border: 0.5px solid gray;
 }
 
-
-
 .padding_designstext{
   margin: 0 150 20 150;          /* Top Right Bottom Left */
 }
@@ -285,6 +283,11 @@ img {
 
   .img_padding{
     width: 80%;
+    height: auto;
+  }
+  /* May need to make this smaller */
+  .card_padding{
+    width: 60%;
     height: auto;
   }
 
@@ -362,6 +365,10 @@ img {
     width: 60%;
     height: auto;
   }
+  .card_padding{
+    width: 50%;
+    height: auto;
+  }
 
   .vid{
     width: auto;
@@ -395,6 +402,10 @@ img {
 @media screen and (min-width:1024px){
 
   .img_padding{
+    width: 40%;
+    height: auto;
+  }
+  .card_padding{
     width: 40%;
     height: auto;
   }

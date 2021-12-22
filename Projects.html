@@ -50,7 +50,7 @@
       <div>
 
         <a href="#UAV" class="link2">
-        <div class="card enlarge" style="width: 20%;">
+        <div class="card enlarge card_padding">
         <!-- <figure style="width: 15%; float: left; text-align: center;"> -->
         <figure style="text-align: center;">
           <img class="image img_rounding" src="Images/UAV/UAV.png">
@@ -60,7 +60,7 @@
       </div>
     
       <a href="#Capstone" class="link2">
-      <div class="card enlarge" style="width: 20%;">
+      <div class="card enlarge card_padding">
         <!-- <figure style="width: 15%; float: left; text-align: center;"> -->
         <figure style="text-align: center;">
           <img class="image img_rounding" src="Images/Bot/Bot_Vat.png"> </img>
@@ -70,7 +70,7 @@
       </div>
 
       <a href="#Osilliscope" class="link2">
-      <div class="card enlarge" style="width: 20%;">
+      <div class="card enlarge card_padding">
         <figure style="text-align: center;">
           <img class="image img_rounding" src="Images/Tinyscope.png"> </img>
           <figcaption>"TinyScope" Homemade Osilliscope</figcaption>
@@ -80,8 +80,6 @@
 
      </div>
     </center>
-
-
 
 
     <!--PROJECT: From Scratch UAV-->
@@ -143,11 +141,62 @@
       <b class = "text"> Autonomous Bot: </b> <br/>
       <img class= "image img_padding"
       src="Images/Bot/Bot_Vat.png"> </img> <br/>
-      <b class = "text"> Bot State Machine: </b> <br/>
-      <img class= "image img_padding"
-      src="Images/Bot/StateMachine.png"> </img> <br/>
-      <br/>
-      <b class = "text"> Bot Solidworks: </b> <br/>
+      
+      <b class = "text"> Randomized Challenge Field: </b> <br/>
+      <img class= "image img_small"
+      src="Images/Bot/RandomField.png"> </img> <br/>
+    </center> 
+
+    <p class="text">
+      <b>Introduction:</b>
+      The purpose of this project is to design, build, and program an autonomous robot 
+      that can complete a randomly generated field. The completion of a given field 
+      consists of detecting triangular vats scattered around that can be detected by infrared beacons on 
+      top of them. In order to complete a vat, the bot needs to deposit a ping pong ball into the correct 
+      hole. The proper hole is designated by a strip of black tape beneath the hole in addition to the 
+      correct side which is designated by a trackwire on the perimeter of the correct face.
+    </p>
+
+    <p class="text">
+      <b>Idea:</b>
+      To build the bot I needed to utilize a combination of computer science, mechanical engineering, and eletrical engineering. 
+      To start I first needed to design the bot based on the challenge and keep it as simple as possible. Our first goal was to 
+      make a draft that would be ready for the peer design review (PDR). The approach taken was to construct a robot that could access two sides of the vat towers at a 
+      time, using a V-shaped cavity in the center to attach to a corner, allowing a ping pong ball to be 
+      deposited to any of the holes on either of these sides. Noting the vat tower faces are ten inches 
+      wide, this strategy requires a large robot. Given the restriction of having a maximum dimension 
+      in any direction of eleven inches, to account for the size, we set off to create a robot that could 
+      fold in order to meet the specifications.
+      </p>
+
+      <center>
+        <b class = "text"> Bot Draft: </b> <br/>
+        <img class= "image img_small"
+        src="Images/Bot/Bot_Draft1.png"> </img> <br/>
+        <br/>
+        <b class = "text"> Bot Draft with Size Restriction: </b> <br/>
+        <img class= "image img_small"
+        src="Images/Bot/Bot_Draft2.png"> </img> <br/>
+        <br/>
+      </center>
+
+    <p class="text">
+      <b>Approach:</b>
+      The strategy consists of attaching to one corner of the tower and using two track wire sensors
+      to quickly identify if the correct face of the tower is accessible from the currently attached
+      corner. If the correct face is found, the upper deposit arms, consisting of servos and tape sensors
+      to control gates on the arms depending on the location of the black tape on the vat tower and the
+      correct face location, act as a gravity feeder. In the case the robot attaches to a corner where the
+      correct face is inaccessible, an algorithm is implemented to attempt to attach the bot to a new
+      corner of the vat tower. We aim to use bumpers on the deposit arms for obstacle detection and to
+      help aid the corner mating procedure. With this approach, the robot is capable of completing any
+      tower after attempting a maximum of two different corner locations. This approach was chosen
+      due to the design easing the need for a precision ball release method as well as the speed
+      improvement gained by the simpler method of identifying proper alignment with the tower.
+    </p>
+    
+    <center>
+    <b class = "text"> Bot Solidworks: </b> <br/>
       <img class= "image img_padding"
       src="Images/Bot/Bot_Solidworks1.png"> </img> <br/>
       <br/>
@@ -155,15 +204,9 @@
       <img class= "image img_small"
       src="Images/Bot/Bot_Solidworks2.png"> </img> <br/>
       <br/>
-
       <b class = "text"> Bot Folding: </b> <br/>
       <img class= "image img_small"
       src="Gifs/Bot_Bend.gif"> </img> <br/>
-      <br/>
-
-      <b class = "text"> Bot Bottom with Wiring: </b> <br/>
-      <img class= "image img_small"
-      src="Images/Bot/Bot_Wiring.png"> </img> <br/>
       <br/>
       <b class = "text"> Bot Full Drawing: </b> <br/>
       <img class= "image img_small"
@@ -177,15 +220,25 @@
       <img class= "image img_small"
       src="Images/Bot/Bot_Bottom_Drawing.png"> </img> <br/>
       <br/>
-      <b class = "text"> Bot Draft: </b> <br/>
-      <img class= "image img_small"
-      src="Images/Bot/Bot_Draft1.png"> </img> <br/>
-      <br/>
-      <b class = "text"> Bot Draft with Size Restriction: </b> <br/>
-      <img class= "image img_small"
-      src="Images/Bot/Bot_Draft2.png"> </img> <br/>
-      <br/>
-      <b class = "text"> Bot Microcontroller Pin Layout: </b> <br/>
+    </center>
+    
+    <p class="text">
+      <b>Mechanical design:</b>
+      A unique aspect of this course is using SolidWorks to create designs that are then cut 
+      using a laser cutter for quick and accurate manufacturing and prototyping. The process starts out 
+      with an idea, which we then CAD each individual object called a part using SolidWorks. As soon 
+      as a working model is made, each part is then taken into an assembly where it is then “mated” 
+      together to see if it will all fit together and no collisions exist. By creating this solid model, we 
+      can confirm and identify shortcomings before attempting any physical prototyping. To get the 
+      parts prepared for laser cutting, each part is taken into an assembly where it is mated onto a 
+      bottom face so all the parts are lying horizontally. It then gets converted from an assembly to a 
+      drawing where the horizontally laid parts become drawings on a sheet. It then needs to be scaled 
+      to a 1:1 ratio where it can then be exported as a DXF (autoCAD Drawing interchange) file to be 
+      cut on the laser cutter.
+    </p>
+    
+    <center>
+    <b class = "text"> Bot Microcontroller Pin Layout: </b> <br/>
       <img class= "image img_padding"
       src="Images/Bot/UNO_Pins.png"> </img> <br/>
       <br/>
@@ -193,23 +246,113 @@
       <img class= "image img_small"
       src="Images/Bot/UNO.png"> </img> <br/>
       <br/>
-      <b class = "text"> Randomized Challenge Field: </b> <br/>
+      <b class = "text"> Bot Bottom with Wiring: </b> <br/>
       <img class= "image img_small"
-      src="Images/Bot/RandomField.png"> </img> <br/>
-    </center> 
+      src="Images/Bot/Bot_Wiring.png"> </img> <br/>
+      <br/>
+    </center>
 
     <p class="text">
-      The purpose of this project is to design, build, and program a small autonomous robot 
-      that can complete a randomly generated field. The completion of a given field 
-      consists of detecting triangular vats scattered around that can be detected by infrared beacons on 
-      top of them. In order to complete a vat, the bot needs to deposit a ping pong ball into the correct 
-      hole. The proper hole is designated by a strip of black tape beneath the hole in addition to the 
-      correct side which is designated by a trackwire on the perimeter of the correct face.
+      <b>Electrical design:</b>
+      The main portions of the electrical work for the bot came from doing the beacon detector and trackwire detector 
+      which was done through the use of PCBs. The beacon detector is responsible for finding the ring of IR LEDs that lay on top of the vat
+      tower. The goal of the beacon detector is to accept and identify a 2 [KHz] signal while rejecting
+      1.5 and 2.5 [KHz] signals. For the circuit we had the input go into 4 gain stages of non-inverting op amps, then through a 
+      bandpass filter that attenuates the signal, through a peak detector, and lastly to a comparator to make it a digital output
+      <a class="link" href="PCB.html">(PCB info)</a>.
+    </p>
+      
+    <p class="text">
+      The trackwire circuit is responsible for detecting the trackwire through the vat tower which is
+      a 12V wire with oscillating 25kHz current running through it causing an oscillating magnetic
+      field. The circuit utilizes a tank circuit which acts as a resonant oscillator
+      and gets the signal from the trackwire's magnetic field through it’s inductor. The capacitor fills up with charge
+      and it oscillates because the capacitor gives charge to the inductor and then the capacitor flips
+      polarity (this causes a sine wave). It is described as a tank because the oscillation can be
+      imagined as a tank with water in it swishing back and forth. From there it consists of three gain
+      stages of non-inverting op amps. It then goes to a peak detector to provide rectification of the inputted AC signal. The
+      output is then buffered with an LED at the end (the voltage difference turns the LED off when a
+      trackwire is detected) <a class="link" href="PCB.html">(PCB info)</a>.
     </p>
 
     <p class="text">
-      To build the bot...
+      Other electronic components include working with various motors and acutators such as servos (fixed and continour), 
+      DC motors (geared and worm geared), H-bridges. In addtion to this we had various sensors such as tape sensors reading both 
+      digital and analog signals, tripwire (laser) triggers, switches acting as bump sensors, and many 5V and 3V regulators to drop 
+      us down from the 9.9V battery power supply.
     </p>
+
+    <center>
+    <b class = "text"> Bot State Machine: </b> <br/>
+    <img class= "image img_padding"
+      src="Images/Bot/StateMachine.png"> </img> <br/>
+    <br/>
+    </center>
+
+    <p class="text">
+      <b>Software design:</b>
+      The code for the bot utilizes a hierarchical state machine design which acts as a standard
+      Finite state machine but each state can have their own “sub” state machines within them. The
+      way that this works is an event is passed to the lowest level it can go and if the state is handled
+      the sub state machine “consumes” the event and returns ES_NO_EVENT to the top level state
+      machine.
+    </p>
+    
+    <p class="text">
+      The <b>top level states</b> used consisted of a ResetState, a FindingVatState, a AtVatState, a
+      FiringState, and a RunAwayState.
+    </p>
+      
+    <p class="text">
+      The <b>ResetState</b> deals with the initialization of the bot. This
+      includes raising or lowering the vtrack and resetting the ball drum to allow it to be filled with
+      new ping pong balls.
+    </p>
+    
+    <p class="text">
+      The <b>FindingVatState</b> deals with finding the vats and driving towards them while dealing with
+      tape events. It transitions into AtVatState when a bumper is hit. This state handles the case when
+      spinning and no beacons are found after an extended period of time.
+    </p>
+    
+    <p class="text">
+      The <b>AtVatState</b> deals with maneuvering around the vat tower and attempts to cause a laser
+      event. This state ignores tape events when realigning with the vat tower after failing with a pivot
+      only. This can be optimized to react to tape events to stay within the boundaries, however, given
+      that the fields are generated in a way that the correct face must be reachable, we found it was
+      mostly unnecessary for completing the task. This state also handles the maneuvering when mated
+      with the wrong face of the tower and the case when the bot is incapable of maneuvering to the
+      next face.
+    </p>
+
+    <p class="text">
+      The <b>FiringState</b> deals with attempting the full mate with the tower after the laser is tripped.
+      Once fully mated, the state deals with readjusting to ensure the bot is flat and checks if at the
+      correct face. This was necessary as using the method of going full speed to slide into the corner
+      often resulted with the bot being positioned propped up against the corner. As our firing method
+      relies on a gravity deposit, this had to be corrected by backing up and coming in at a slower
+      speed. This state also handles checking for the trackwire, and, if at the correct face, the state
+      handles depositing the ball into the correct hole by moving the appropriate servos. The servos
+      that are moved are the ball drum servo, the middle servo determining the side the ball would roll
+      down, and the arm servos if tape was found on inner two holes of the tower.
+    </p>
+    <p class="text">
+      The <b>RunAwayState</b> deals with getting the bot in a position in which it could likely find a new
+      vat tower. This state is entered either following depositing a ping pong ball or in the case that
+      both attempts to reach a new corner of the vat fails. It is used to get out of situations in which the
+      bot can not make progress. The sequence is simple, starting with backing up from the tower and
+      then turning partially while ignoring beacons. It then transitions into the FindingVatState and
+      continues its spin now looking for beacons. This state could be converted into a tape follow state
+      that would search for corners of the field to give better chances at finding all the towers. This
+      was implemented though we decided that the basic method of spinning was quick and was
+      efficient at getting the two towers needed.
+    </p>
+
+    <p class="text">
+      Our design implemented three <b>substate machines</b>. FindingVat, AtVat, and Firing are
+      implemented as substate machines.
+    </p>
+
     <hr>
     <!--Mech Lab 3-->
     <p><strong class = "text" > Mechatronics Lab3:</strong></p>
