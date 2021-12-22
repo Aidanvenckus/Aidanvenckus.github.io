@@ -1,7 +1,8 @@
 
 
 html{
-  font-family:sans-serif
+  font-family:sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* FADE EFFECT can be added to class to have text/images fade in */
@@ -85,6 +86,16 @@ html{
     blink 750ms steps(var(--typewriterCharacters)) infinite;
 }
 
+/* Link Behaviors */
+/* a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+} */
+/* End Link Behavior */
+
+/* Link Behaviors */
+/* Links used on the blog */
 .link{
   background-color: #474747;
   color: white;
@@ -95,6 +106,17 @@ html{
 }
 .link:hover{
   background-color: gray;
+  transform: scale(0.8);
+}
+/* Links used on other parts */
+.link2:hover{
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+/* End Link Section */
+
+.enlarge:hover{
   transform: scale(0.8);
 }
 
