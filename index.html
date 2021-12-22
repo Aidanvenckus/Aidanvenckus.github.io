@@ -58,9 +58,154 @@
 
 
     <!-- START OF BLOG -->
-    <center><h2>Recent Updates NEW:</h2></center>
+    <center><h2>Recent Updates:</h2></center>
 
-    <!--BEACON PCB DESIGN PART 1-->
+    <!--Homemade UAV-->
+    <div class="card">
+      <div style="clear:both">
+      <h2 style="float: left"> UAV from scratch</h2> <h5 style="float: right">December 11th, 2021</h5>
+      <br/> <br/>
+      </div>
+      <br/> <br>
+      <center>
+      <img class="image img_padding img_rounding" src="Images/UAV/UAV.png"> </img> <br/>
+      <i>*Built UAV</i> <br/>
+      </center>
+      <p>
+        <br/>
+        In this project I designed and built a UAV as a start to my goal of creating a long distance autonomous drone that can be retrofitted for various tasks.
+        I started this project by deciding on what type of drone I wanted to build, my favorite of which are fixed wing aircraft that have a glider type of airframe 
+        because they are more fun to fly. I decided on doing a 4ft wingspan fixed wing single motor design that would have the motor mounted on top of it to allow for 
+        gentler crashes and easier training. The firmware of the flight controller is ardupilot with mission planner installed to utilize the sensors and data avaliable.
+      </p>
+      Read more about the new features of the <a class="link" href="Projects.html"> UAV from Scratch</a>
+    </div>
+
+    <!--Mechatronics Capstone-->
+    <div class="card">
+      <div style="clear:both">
+      <h2 style="float: left"> Mechatronics Capstone: autonomous bot</h2> <h5 style="float: right">December 6th, 2021</h5>
+      <br/> <br/>
+      </div>
+      <br/> <br>
+      <center>
+      <img class="image img_padding img_rounding" src="Images/Bot/Bot_Vat.png"> </img> <br/>
+      <i>*Bot with Vat</i> <br/>
+      <img class="image img_padding img_rounding" src="Images/Bot/Bot_Solidworks1.png"> </img> <br/>
+      <i>*Bot's Solidwork design</i> <br/>
+      <img class="image img_padding img_rounding" src="Images/Bot/Bot_Solidworks2.png"> </img> <br/>
+      <i>*Bot's Solidwork design 2</i> <br/>
+      <img class="image img_padding img_rounding" src="Images/Bot/Bot_Draft2.png"> </img> <br/>
+      <i>*Bot's Solidwork design with Size Restrictions</i> <br/>
+      </center>
+      <p>
+        <br/>
+        The purpose of this project is to design, build, and program an autonomous robot 
+        that can complete a randomly generated field. The completion of a given field 
+        consists of detecting triangular vats scattered around that can be detected by infrared beacons on 
+        top of them. In order to complete a vat, the bot needs to deposit a ping pong ball into the correct 
+        hole. The proper hole is designated by a strip of black tape beneath the hole in addition to the 
+        correct side which is designated by a trackwire on the perimeter of the correct face.
+      </p>
+      Link to class: <a class="link" href="https://courses.soe.ucsc.edu/courses/ece118"> Mechatronics</a> <br>
+      Read more about the features of the <a class="link" href="Projects.html"> Autonomous Bot</a>
+    </div>
+
+    <!--Trackwire PCB-->
+    <div class="card">
+      <div style="clear:both">
+      <h2 style="float: left"> Trackwire PCB</h2> <h5 style="float: right">November 11th, 2021</h5>
+      <br/> <br/>
+      </div>
+      <br/> <br>
+      <center>
+      <img class="image img_padding img_rounding" src="Images/PCBs/Trackwire_PCB_Traces.png"> </img> <br/>
+      <i>*Trackwire PCB Traces</i> <br/>
+      <img class="image img_padding img_rounding" src="Images/PCBs/Trackwire_PCB.png"> </img> <br/>
+      <i>*Trackwire PCB</i> <br/>
+      </center>
+      <p>
+        <br/>
+        This was a trackwire detector which I used on my capstone autonomous ground robot. It worked based on a inductor that 
+        would try to read the magnetic field of a wire with osilating current running through it, take the signal, amplify it, 
+        then sample the signal through a peak detector and comparator. This allowed the signal to go from analog to a digital 
+        high and low to be read through an LED and in most cases the microcontroller IO.
+      </p>
+      Read more about the <a class="link" href="PCB.html"> Ornament PCB</a>
+    </div>
+
+    <!--BEACON PCB DESIGN 2-->
+    <div class="card">
+      <div style="clear:both">
+      <h2 style="float: left"> Revised Beacon PCB design </h2> <h5 style="float: right">November 3rd, 2021</h5>
+      <br/> <br/>
+      </div>
+      <br/> <br>
+      <center>
+      <img class="image img_padding img_rounding" src="Images/PCBs/Beacon2_PCB_Traces.png"> </img> <br/>
+      <i>*Beacon v2 Traces</i> <br/>
+      <img class="image img_padding img_rounding" src="Images/PCBs/Beacon2_PCB.png"> </img> <br/>
+      <i>*Beacon v2 PCB</i> <br/>
+      </center>
+      <p>
+        <br/>
+        I needed to revise my previous Beacon Detector because I had made a few mistakes that were worth designing a 
+        new PCB for. I had made my traces too small which led to some of the ones that I used to have traces scratched 
+        which acts like a cut wire (I changed this after ordering). In addition my previous design had a couple op amps in positive feeback accidently in 
+        addition to having additional unnessesary gain stages (from 6 to 4). Lastly I did a complete size reduction and 
+        compacted all the components by moving them and utilizing all the op amp ports.
+      </p>
+      Read more about the new features of the <a class="link" href="PCB.html"> Beacon Detector v2</a>
+    </div>
+
+    <!--Ornament PCB-->
+    <div class="card">
+      <div style="clear:both">
+      <h2 style="float: left"> Ornament PCB</h2> <h5 style="float: right">October 30th, 2021</h5>
+      <br/> <br/>
+      </div>
+      <br/> <br>
+      <center>
+      <img class="image img_padding img_rounding" src="Images/PCBs/Ornament_PCB_Traces.png"> </img> <br/>
+      <i>*Ornament PCB Traces</i> <br/>
+      <img class="image img_padding img_rounding" src="Images/PCBs/Ornament_PCB_Front.png"> </img> <br/>
+      <i>*Ornament PCB</i> <br/>
+      </center>
+      <p>
+        <br/>
+        This year for the holidays I gave a few Ornament PCBs to my family and friends. The PCB ran on a 9V battery and would flash its 
+        LEDs based on the resistance of the potentiometer on it connected to the 555 timer. This allowed for the speed of the flashing to 
+        be configurable and custom. In addition to this you are able to change out the LEDs for other colors but the resistors would need 
+        to be changed as different colored LEDs require different voltages to run. I changed the schematic after ordering the PCB as I started 
+        to increase the size of my traces on the PCB in addition to the size of the power and ground traces to be larger.
+      </p>
+      Read more about the <a class="link" href="Projects.html"> Ornament PCB</a>
+    </div>
+
+    <!-- MECH LAB 3 MOTORS & ACTUATORS -->
+    <div class="card">
+      <div style="clear:both">
+      <h2 style="float: left"> Capstone Project: Lab 3 - Motors and actuators </h2> <h5 style="float: right">October 24th, 2021</h5>
+      <br/> <br/>
+      </div>
+      <br/> <br>
+      <center>
+      <img class="image img_padding img_rounding" src="Images/MotorLab.png"> </img> <br/>
+      <i>*Built UAV</i> <br/>
+      </center>
+      <p>
+        <br/>
+        In this lab I got the chance to test various motors to be used in the capstone project. I got the chance to use 
+        servos, stepper motors, and DC motors. We had a power distribution board that was able to power the motors with 
+        5V and 12V when necessary and was able to use H-bridges and various dedicated boards to run the motors. In addition 
+        we had to solve some inductive kickback when working with the DC motors and worked on different type of step methods 
+        for the stepper motor. I had the chance to try wave step, full step, and half step. The type of step that is most often 
+        used is micro step with sin wave phasing but I didn't have a chace to try it.
+      </p>
+      Link to class: <a class="link" href="https://courses.soe.ucsc.edu/courses/ece118"> Mechatronics</a>
+    </div>
+
+    <!--BEACON PCB DESIGN 1-->
     <div class="card">
       <div style="clear:both">
       <h2 style="float: left"> Beacon PCB design </h2> <h5 style="float: right">Oct 20th, 2021</h5>
@@ -78,11 +223,10 @@
         I created a PCB of a circuit that I found fascinating in my capstone class for fun. This PCB is a IR Light detector which should be able to see IR from over 16 feet away. 
         I designed the circuit first on a breadboard before taking the schematic and using the PCB creation software EAGLE to make the digital schematic. I then converted the 
         digital schematic into a PCB design and designed it to be relatively compact but still easy to see where each of the PCB traces are going.
-        (More details will be added later)
       </p>
     </div>
 
-    <!--MECH LAB 2 MECHANICAL PROTOTYPING-->
+    <!-- MECH LAB 2 MECHANICAL PROTOTYPING -->
     <div class="card">
       <div style="clear:both">
       <h2 style="float: left"> Capstone Project: Lab 2 - Mechanical and Electronic Prototyping </h2> <h5 style="float: right">Oct 18th, 2021</h5>
@@ -104,7 +248,6 @@
         This assignment was for us to design a practive bot that will be inspired on what we should be expecting for the final bot. I created this by using solidworks to design the 
         individual parts, assembled them together and made sure all the parts fit together. I then put all the parts on one plane and created a cutout design to then send to 
         the laser cutter.
-        (More details will be added later)
       </p>
       Link to class: <a class="link" href="https://courses.soe.ucsc.edu/courses/ece118"> Mechatronics</a>
     </div>
@@ -128,7 +271,6 @@
         It does this by using multiple stages such as a transresistive input, non inverting op amp stages for amplification, 
         a filtering stage by using a 4th order butterworth to only let in 2kHz signals, a peak detector, comparator with hysterisis with thresholds 
         set to be able to make it into a digital high-low signal, and lastly a LED to show the output.
-        (More details will be added later)
       </p>
       Link to class: <a class="link" href="https://courses.soe.ucsc.edu/courses/ece118"> Mechatronics</a>
     </div>
@@ -298,6 +440,7 @@
       <p>
         Unfortunately I cannot display the full code as it could be an assignment for future quarters and that would be a lapse of academic integrity
       </p>
+      Read more about the <a class="link" href="Projects.html"> TinyScope </a>
     </div>
 
     <!-- When there are too many updates on the first page add a button that makes the later cards turn off display:none -->
