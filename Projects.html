@@ -51,24 +51,34 @@
     <center>
       <div>
 
+        <a href="#Capstone" class="link2">
+          <div class="card enlarge card_padding">
+            <!-- <figure style="width: 15%; float: left; text-align: center;"> -->
+            <figure style="text-align: center;">
+              <img class="image img_rounding" src="Images/Bot/Bot_Vat.png"> </img>
+              <figcaption>Capstone: Autonomous Bot </figcaption>
+            </figure>
+          </a>
+          </div>
+
+          <a href="#Drone" class="link2">
+            <div class="card enlarge card_padding">
+              <!-- <figure style="width: 15%; float: left; text-align: center;"> -->
+              <figure style="text-align: center;">
+                <img class="image img_rounding" src="Images/CITRIS/Matrice210.png"> </img>
+                <figcaption>CITRIS: Drone Training </figcaption>
+              </figure>
+            </a>
+            </div>
+
         <a href="#UAV" class="link2">
         <div class="card enlarge card_padding">
         <!-- <figure style="width: 15%; float: left; text-align: center;"> -->
         <figure style="text-align: center;">
-          <img class="image img_rounding" src="Images/UAV/UAV.png">
+          <img class="image img_rounding" src="Images/UAV/DroneV2.png">
            <figcaption>UAV from Scratch</figcaption>
         </figure>
       </a> 
-      </div>
-    
-      <a href="#Capstone" class="link2">
-      <div class="card enlarge card_padding">
-        <!-- <figure style="width: 15%; float: left; text-align: center;"> -->
-        <figure style="text-align: center;">
-          <img class="image img_rounding" src="Images/Bot/Bot_Vat.png"> </img>
-          <figcaption>Capstone: Autonomous Bot </figcaption>
-        </figure>
-      </a>
       </div>
 
       <a href="#Osilliscope" class="link2">
@@ -83,57 +93,6 @@
      </div>
     </center>
 
-
-    <!--PROJECT: From Scratch UAV-->
-    <hr id="UAV">
-    <p><strong class = "text" > Designing Flight - UAV from Scratch:</strong></p>
-    <p class="text">
-      In this project I designed and built a UAV as a start to my goal of creating a long distance autonomous drone that can be retrofitted for various tasks.
-      I started this project by deciding on what type of drone I wanted to build, my favorite of which are fixed wing aircraft that have a glider type of airframe 
-      because they are more fun to fly. I decided on doing a 4ft wingspan fixed wing single motor design that would have the motor mounted on top of it to allow for 
-      gentler crashes and easier training. The firmware of the flight controller is ardupilot with mission planner installed to utilize the sensors and data avaliable.
-    </p>
-
-    <center> 
-    <img class= "image img_padding" src="Images/UAV/UAV.png"> </img> <br>
-    <i>*UAV running on Ardupilot Mission Planner</i> <br/> <br/>
-    <img class= "image img_padding" src="Images/UAV/UAV_Crashed.png"> </img> <br>
-    <i>*UAV has taken a few Hits</i> <br/> <br/>
-    <img class= "image img_padding" src="Images/UAV/UAV_Disassembled.png"> </img> <br>
-    <i>*Building the UAV</i> <br/> <br/>
-    </center>
-    <br>
-    <center><b> UAV Specs: </b> </center>
-
-    <dl class="text">
-      <dt><u>Flight Controller - Matek F405 Wing Flight Controller</u></dt>
-        <dd>- 2x Motors, 7x Servos outputs, 2x I2C</dd> 
-        <dd>- 3x LEDs for FC STATUS</dd>
-        <dd>- accelerometer + gyro + barometer + blackbox</dd>
-        <dd>- 168MHz STM32F405</dd>
-        <dd>- INAV operating system</dd>
-        <center><img class= "image img_padding" src="Images/UAV/Flight_Controller.png"> </img></center> <br>
-        <br/>
-      <dt><u>Transmitter - TX16S</u></dt>
-        <dd>- 16CH Radio Transmitter</dd>
-        <dd>- Multi-Protocol OpenTX</dd>
-        <center><img class= "image img_padding" src="Images/UAV/TX16S.png"> </img></center> <br>
-        <br/>
-      <dt><u>Reciever - RadioMaster R86C</u></dt>
-        <dd>- Channels: 6 channels (PWM), 8 channels (SBUS)</dd>
-        <dd>- Frequency range: 2400-2483.5Mhz</dd>
-        <dd>- Signal format: Frsky D8 Compatible</dd>
-        <center><img class= "image img_padding" src="Images/UAV/R86C.png"> </img></center> <br>
-        <br/>
-      <dt><u>GPS - Matek GPS Module SAM-M8Q Mini</u></dt>
-        <dd>- Small (15cm x 25cm), Low power, light (7g) </dd>
-        <center><img class= "image img_padding" src="Images/UAV/GPS.png"> </img></center> <br>
-        <br/>
-      <dt><u>Lipo Battery 11.1V 2200mAh 3S 25C </u></dt><br/>
-      <dt><u>1400KV Brushless Motor + 30Amp ESC </u></dt><br/>
-      <dt><u>SG90 Servos (9 grams)</u></dt><br/>
-      <dt><u>8060 Propeller </u></dt><br/>
-      </dl>
 
     <hr id="Capstone">
     <!--CAPSTONE: MECHATRONICS-->
@@ -355,6 +314,30 @@
       implemented as substate machines.
     </p>
 
+
+  <center>
+    <video class = "Vid" controls>
+      <source src="Videos/Full_Run.mp4" type="video/mp4">
+    </video> <br/>
+    <i>*The vat finding algorithm in action </i> <br/> <br/>
+
+    <video class = "Vid" controls>
+      <source src="Videos/Line_Follow.mp4" type="video/mp4">
+    </video> <br/>
+    <i>*One iteration of the state machine where we did line following but proved to be too risky</i> <br/> <br/>
+
+    <video class = "Vid" controls>
+      <source src="Videos/Servo_Test.mp4" type="video/mp4">
+    </video> <br/>
+    <i>*Testing the light sensor and servo responses </i> <br/> <br/>
+
+    <video class = "Vid" controls>
+      <source src="Videos/Movement_Test.mp4" type="video/mp4">
+    </video> <br/>
+    <i>*Testing the V shaped design for drifting into the vat </i> <br/> <br/>
+
+  </center>
+
     <hr>
     <!--Mech Lab 3-->
     <p><strong class = "text" > Mechatronics Lab3:</strong></p>
@@ -401,8 +384,6 @@
       sure all the parts fit together. I then put all the parts on one plane and created a cutout design to then send 
       to the laser cutter. 
     </p>
-
-    (More detail will be added later...)
     
     <hr>
     <!--Mech Lab 1-->
@@ -439,8 +420,6 @@
       <dd>- The digital signal now gets passed to a buffer and LED (Green) to be able to show the resulting output</dd><br/>
     </dl>
 
-    (More detail will be added later...)
-
     <hr>
     <!--Mech Lab 0-->
     <p><strong class = "text" > Mechatronics Lab0:</strong></p>
@@ -470,6 +449,163 @@
     Too sleepy to put more description right now.
   </p>
 
+  <!--PROJECT: CITRIS Drone Training-->
+  <hr id="Drone">
+  <p><strong class = "text"> CITRIS: Drone Training:</strong></p>
+
+  <p class="text">
+    In the Winter quarter of 2022 I was able to take part in a drone training program that was partnered with UCSC and funded by the 
+    <a href="https://citris-uc.org/">CITRIS and the Banatao Institute</a> to teach students how to fly various drones, take data, plan autonomous missions, and earn their 
+    part 107 Remote pilot's license.
+  </p>
+
+  <p class="text">
+    Below I have images of one of the many flights we did which allowed us to collect photogrammerty data in a app called 
+    <a href="https://www.dronedeploy.com/">Drone Deploy</a>. This program allows you to plan flights on a google earth view and upload 
+    those flights directly to the compatible drone to fly, take images at a certian altitude (for even cm/px resolution), and stick the 
+    images together for a final result. The flight is completely autonomous and will takeoff and land for you.
+  </p>
+
+  <center>
+
+    <img class= "image img_padding" src="Images/CITRIS/Matrice210.png"> </img> <br>
+    <i>*The Matrice 210 fully assembled </i> <br/> <br/>
+
+    <img class = "img_padding" src="Images/CITRIS/MatricePlan.png"> </img> <br>
+    <i>*Matrice flight path mapped </i> <br/> <br/>
+
+    <img class = "img_padding" src="Images/CITRIS/MatriceView.png"> </img> <br>
+    <i>*The view from the Matrice 210 </i> <br/> <br/>
+
+    <video class = "Vid" controls>
+      <source src="Videos/Matrice210.mp4" type="video/mp4">
+    </video> <br/>
+    <i>*Matrice 210 comming in for a landing </i> <br/> <br/>
+
+    <img class = "img_padding" src="Images/CITRIS/Mavic_Mini.png"> </img> <br>
+    <i>*Flying the Mavic Mini for practice </i> <br/> <br/>
+
+    <img class= "image img_padding" src="Images/CITRIS/Drone_Meadow_Overview.PNG"> </img> <br>
+    <i>*Overview of the test site </i> <br/> <br/>
+
+    <img class = "img_padding" src="Images/CITRIS/Drone_Meadow_Elevation.PNG"> </img> <br>
+    <i>*Elevation data of test site </i> <br/> <br/>
+
+    <img class= "image img_padding" src="Images/CITRIS/Drone_Meadow_Plant_Health.PNG"> </img> <br>
+    <i>*Plant health of test site based on RGB values </i> <br/> <br/>
+
+    <img class = "img_padding" src="Images/CITRIS/Drone_Meadow_Point_Cloud.PNG"> </img> <br>
+    <i>*Point cloud of test site </i> <br/> <br/>
+
+    <img class= "image img_padding" src="Images/CITRIS/Drone_Meadow_3D_Model.PNG"> </img> <br>
+      <i>*3D model of test site based off point cloud data </i> <br/> <br/>
+
+
+  </center>
+ 
+
+
+    <!--PROJECT: From Scratch UAV-->
+    <hr id="UAV">
+    <p><strong class = "text"> Designing Flight - UAV from Scratch:</strong></p>
+    
+
+    <p><strong class = "text"> UAV V2</strong></p>
+    <p class="text">
+      In this new version of the drone I fixed many of the issues that I found whole flight testing V1. 
+    </p>
+      <p class="text">
+      - The foam that I used for the wings is a <b>lighter and cheaper</b> dollar tree <b>foam</b> rather than the elmers branded foam board. Although this took some of the 
+      structure from the plane, I made up for it by keeping fuselage out of the stronger foam and reinforced it with wooden dowel rods on each corner to prevent bending. 
+      This allowed for the plane's foam to compress on impact, but not bend or break if any rough landings happen.
+    </p>
+
+    <p class="text">
+      - Adding <b>dihedral</b> to the <b>wings</b> allowed the plane to self level even without any controls. Dihedral is defined as 
+      wings that tild upward, which increases lateral stability in a bank by causing the lower wing to fly at a higher angle of attack than the higher wing. This causes 
+      more lift to be given to the lower wing causing it to recover. The only downside to dihedral that should be noted is that the wings no longer cause purely vertical 
+      lift which can lead to drag and decreased roll rate, but this is all worth the stabillity it allows.
+    </p>
+
+    <p class="text">
+      - I got the <b>flight computer</b> running ardupilot firmware to be able to do <b>stabilization</b> so the Yaw, Pitch, and Roll get corrected automatically allowing for a hands 
+      off flight. This has lead to there being no crashes so far in the current version and full flights even in winds 5-10kt.
+      vb
+    </p>
+    <p class="text">
+      - I <b>reduced</b> the <b>weight</b> by stripping any unnessesary parts from the fuselage and moved the motor to the front.
+    </p>
+    <p class="text">
+      - A huge focus went to making sure the <b>center of gravity (CG)</b> was in the correct spot instead of an estimate. The CG is defined as lining up with the center 
+      of lift of the plane which is on average 25-33% on the front of the wing. This can change from aircraft to aircraft because they can vary in weights and shapes.
+    </p>
+
+    <center> 
+      <img class= "image img_padding" src="Images/UAV/DroneV2.png"> </img> <br>
+      <i>*Improved UAV V2 </i> <br/> <br/>
+      <img class = "img_padding" src="Images/UAV/Motor_Mount.png"> </img> <br>
+      <i>*3D Printed motor mount </i> <br/> <br/>
+
+      <video class = "Vid" controls>
+        <source src="Videos/Drone_Flight.mp4" type="video/mp4">
+      </video> <br/>
+      <i>*UAV V2 maiden flight </i> <br/> <br/>
+
+      <video class = "Vid" controls>
+        <source src="Videos/Drone_Crash.mp4" type="video/mp4">
+      </video> <br/>
+      <i>*FPV chase of my drone which ended in a bump </i> <br/> <br/>
+    </center>
+    
+  <p><strong class = "text"> UAV V1</strong></p>
+    <p class="text">
+      In this project I designed and built a UAV as a start to my goal of creating a long distance autonomous drone that can be retrofitted for various tasks.
+      I started this project by deciding on what type of drone I wanted to build, my favorite of which are fixed wing aircraft that have a glider type of airframe 
+      because they are more fun to fly. I decided on doing a 4ft wingspan fixed wing single motor design that would have the motor mounted on top of it to allow for 
+      gentler crashes and easier training. The firmware of the flight controller is ardupilot with mission planner installed to utilize the sensors and data avaliable.
+    </p>
+
+    <center> 
+    <img class= "image img_padding" src="Images/UAV/UAV.png"> </img> <br>
+    <i>*UAV running on Ardupilot Mission Planner</i> <br/> <br/>
+    <img class= "image img_padding" src="Images/UAV/UAV_Crashed.png"> </img> <br>
+    <i>*UAV has taken a few Hits</i> <br/> <br/>
+    
+    </center>
+    <br>
+    <center><b> UAV Specs: </b> </center>
+
+    <dl class="text">
+      <dt><u>Flight Controller - Matek F405 Wing Flight Controller</u></dt>
+        <dd>- 2x Motors, 7x Servos outputs, 2x I2C</dd> 
+        <dd>- 3x LEDs for FC STATUS</dd>
+        <dd>- accelerometer + gyro + barometer + blackbox</dd>
+        <dd>- 168MHz STM32F405</dd>
+        <dd>- INAV operating system</dd>
+        <center><img class= "image img_padding" src="Images/UAV/Flight_Controller.png"> </img></center> <br>
+        <br/>
+      <dt><u>Transmitter - TX16S</u></dt>
+        <dd>- 16CH Radio Transmitter</dd>
+        <dd>- Multi-Protocol OpenTX</dd>
+        <center><img class= "image img_padding" src="Images/UAV/TX16S.png"> </img></center> <br>
+        <br/>
+      <dt><u>Reciever - RadioMaster R86C</u></dt>
+        <dd>- Channels: 6 channels (PWM), 8 channels (SBUS)</dd>
+        <dd>- Frequency range: 2400-2483.5Mhz</dd>
+        <dd>- Signal format: Frsky D8 Compatible</dd>
+        <center><img class= "image img_padding" src="Images/UAV/R86C.png"> </img></center> <br>
+        <br/>
+      <dt><u>GPS - Matek GPS Module SAM-M8Q Mini</u></dt>
+        <dd>- Small (15cm x 25cm), Low power, light (7g) </dd>
+        <center><img class= "image img_padding" src="Images/UAV/GPS.png"> </img></center> <br>
+        <br/>
+      <dt><u>Lipo Battery 11.1V 2200mAh 3S 25C </u></dt><br/>
+      <dt><u>1400KV Brushless Motor + 30Amp ESC </u></dt><br/>
+      <dt><u>SG90 Servos (9 grams)</u></dt><br/>
+      <dt><u>8060 Propeller </u></dt><br/>
+      </dl>
+
+    
     <!--PROJECT: OSILLISCOPE-->
     <hr id="Osilliscope">
     <p><strong class = "text" > "TinyScope" Osilliscope:</strong></p>
