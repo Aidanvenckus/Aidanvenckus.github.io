@@ -87,15 +87,6 @@ html{
 }
 
 /* Link Behaviors */
-/* a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
-} */
-/* End Link Behavior */
-
-/* Link Behaviors */
-/* Links used on the blog */
 .link{
   background-color: #474747;
   color: white;
@@ -309,6 +300,9 @@ img {
   .toggle-button{
     display: flex;
   }
+  .toggle-button:hover{
+    transform: scale(0.8);
+  }
   .navbar{
     flex-direction: column;
     align-items: flex-start;
@@ -334,9 +328,6 @@ img {
   }
   .navbar-links.active{
     display: flex;
-  }
-  .toggle-button:hover{
-    transform: scale(0.8);
   }
   .text{
     padding-left: 10%;
