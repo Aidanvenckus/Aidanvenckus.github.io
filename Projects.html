@@ -9,6 +9,9 @@
     <!-- Including the JavaScript-->
     <script src="script.js" defer> </script> <!--Defer: A script that will not run until after the page has loaded:-->
     <!-- Including the CSS Style Sheet-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -48,68 +51,53 @@
     </p>
 
     <!-- Topics Menu-->
-    <center>
-      <div>
+    <div class="topic-grid">
 
-        <!--
-        <a href="#3DPrintPlane" class="link2">
-          <div class="card enlarge card_padding">
-            <figure style="text-align: center;">
-              <img class="image img_rounding" src="Images/IMAGEHERE"> </img>
-              <figcaption>UAS: 3D Printed Plane </figcaption>
-            </figure>
-          </a>
-          </div>
-        -->
+      <!--
+      <a href="#3DPrintPlane" class="link2 card enlarge card_padding">
+        <figure style="text-align: center;">
+          <img class="image img_rounding" src="Images/IMAGEHERE"> </img>
+          <figcaption>UAS: 3D Printed Plane </figcaption>
+        </figure>
+      </a>
+      -->
 
-        <a href="#Capstone" class="link2">
-          <div class="card enlarge card_padding">
-            <!-- <figure style="width: 15%; float: left; text-align: center;"> -->
-            <figure style="text-align: center;">
-              <img class="image img_rounding" src="Images/Bot/Bot_Vat.png"> </img>
-              <figcaption>Capstone: Autonomous Bot </figcaption>
-            </figure>
-          </a>
-          </div>
+      <a href="#Capstone" class="link2 card enlarge card_padding">
+        <figure style="text-align: center;">
+          <img class="image img_rounding" src="Images/Bot/Bot_Vat.png"> </img>
+          <figcaption>Capstone: Autonomous Bot </figcaption>
+        </figure>
+      </a>
 
-          <a href="#Drone" class="link2">
-            <div class="card enlarge card_padding">
-              <!-- <figure style="width: 15%; float: left; text-align: center;"> -->
-              <figure style="text-align: center;">
-                <img class="image img_rounding" src="Images/CITRIS/Matrice210.png"> </img>
-                <figcaption>CITRIS: Drone Training </figcaption>
-              </figure>
-            </a>
-            </div>
+      <a href="#Drone" class="link2 card enlarge card_padding">
+        <figure style="text-align: center;">
+          <img class="image img_rounding" src="Images/CITRIS/Matrice210.png"> </img>
+          <figcaption>CITRIS: Drone Training </figcaption>
+        </figure>
+      </a>
 
-        <a href="#UAV" class="link2">
-        <div class="card enlarge card_padding">
-        <!-- <figure style="width: 15%; float: left; text-align: center;"> -->
+      <a href="#UAV" class="link2 card enlarge card_padding">
         <figure style="text-align: center;">
           <img class="image img_rounding" src="Images/UAV/DroneV2.png">
-           <figcaption>UAV from Scratch</figcaption>
+          <figcaption>UAV from Scratch</figcaption>
         </figure>
-      </a> 
-      </div>
+      </a>
 
-      <a href="#Osilliscope" class="link2">
-      <div class="card enlarge card_padding">
+      <a href="#Osilliscope" class="link2 card enlarge card_padding">
         <figure style="text-align: center;">
           <img class="image img_rounding" src="Images/School/Tinyscope.png"> </img>
           <figcaption>"TinyScope" Homemade Osilliscope</figcaption>
         </figure>
       </a>
-      </div>
 
-     </div>
-    </center>
+    </div>
 
 
 
     <!-- <hr id="3DPrintPlane"> -->
     <!--3D Printed Plane-->
 <!--
-    <p><strong class = "text" > 3D Printed Plane:</strong></p>
+    <h2 class="section-title">3D Printed Plane:</h2>
 
     <center> 
       <b class = "text"> Plane Picture here: </b> <br/>
@@ -129,7 +117,7 @@
 
     <hr id="Capstone">
     <!--CAPSTONE: MECHATRONICS-->
-    <p><strong class = "text" > Mechatronics Capstone Project:</strong></p>
+    <h2 class="section-title">Mechatronics Capstone Project:</h2>
 
     <center> 
       <b class = "text"> Autonomous Bot: </b> <br/>
@@ -373,7 +361,7 @@
 
     <hr>
     <!--Mech Lab 3-->
-    <p><strong class = "text" > Mechatronics Lab3:</strong></p>
+    <h2 class="section-title">Mechatronics Lab3:</h2>
 
     <center> 
       <b class = "text"> Motor testing board: </b> <br/>
@@ -393,7 +381,7 @@
 
     <hr>
     <!--Mech Lab 2-->
-    <p><strong class = "text" > Mechatronics Lab2:</strong></p>
+    <h2 class="section-title">Mechatronics Lab2:</h2>
 
     <center> 
       <b class = "text"> Lasercutting Bot Chassis: </b> <br/>
@@ -420,7 +408,7 @@
     
     <hr>
     <!--Mech Lab 1-->
-    <p><strong class = "text" > Mechatronics Lab1:</strong></p>
+    <h2 class="section-title">Mechatronics Lab1:</h2>
     
     <center> 
     <b class = "text"> Beacon Demonstration: </b> <br/>
@@ -455,7 +443,7 @@
 
     <hr>
     <!--Mech Lab 0-->
-    <p><strong class = "text" > Mechatronics Lab0:</strong></p>
+    <h2 class="section-title">Mechatronics Lab0:</h2>
 
     <center> 
       <video class = "Vid" controls>
@@ -484,7 +472,7 @@
 
   <!--PROJECT: CITRIS Drone Training-->
   <hr id="Drone">
-  <p><strong class = "text"> CITRIS: Drone Training:</strong></p>
+  <h2 class="section-title">CITRIS: Drone Training:</h2>
 
   <p class="text">
     In the Winter quarter of 2022 I was able to take part in a drone training program that was partnered with UCSC and funded by the 
@@ -540,9 +528,9 @@
 
     <!--PROJECT: From Scratch UAV-->
     <hr id="UAV">
-    <p><strong class = "text"> Designing Flight - UAV from Scratch:</strong></p>
+    <h2 class="section-title">Designing Flight - UAV from Scratch:</h2>
     
-    <p><strong class = "text"> UAV V3 (3D Printed)</strong></p>
+    <h2 class="section-title">UAV V3 (3D Printed)</h2>
     
     <p class="text">
       In this new version of the UAV I tried to design it from scratch and manafacture it by using 3D printing.
@@ -580,7 +568,7 @@
 
 
 
-    <p><strong class = "text"> UAV V2</strong></p>
+    <h2 class="section-title">UAV V2</h2>
     <p class="text">
       In this new version of the drone I fixed many of the issues that I found while flight testing V1. 
     </p>
@@ -627,7 +615,7 @@
       <i>*FPV chase of my drone which ended in a bump </i> <br/> <br/>
     </center>
     
-  <p><strong class = "text"> UAV V1</strong></p>
+  <h2 class="section-title">UAV V1</h2>
     <p class="text">
       In this project I designed and built a UAV as a start to my goal of creating a long distance autonomous drone that can be retrofitted for various tasks.
       I started this project by deciding on what type of drone I wanted to build, my favorite of which are fixed wing aircraft that have a glider type of airframe 
@@ -678,7 +666,7 @@
     
     <!--PROJECT: OSILLISCOPE-->
     <hr id="Osilliscope">
-    <p><strong class = "text" > "TinyScope" Osilliscope:</strong></p>
+    <h2 class="section-title">"TinyScope" Osilliscope:</h2>
 
     <center> <img class= "image img_padding" src="Images/School/Tinyscope.png" ></img> </center>
     
@@ -733,14 +721,14 @@
 
     <!--PROJECT: ELECTRIC BIKE-->
     <!-- <hr>
-    <p><strong class = "text" > DIY - Electric Bike:</strong></p>
+    <h2 class="section-title">DIY - Electric Bike:</h2>
     <p class="text">
       In progress...
     </p> -->
 
     <!--PROJECT: PYTHON-->
     <!-- <hr>
-    <p><strong class = "text" > Python Projects:</strong></p>
+    <h2 class="section-title">Python Projects:</h2>
     <p class="text">
       Python Dungeon Crawler In Progress...
     </p> -->
@@ -752,7 +740,7 @@
 
      <!--PROJECT: C
      <hr>
-     <p><strong class = "text" >C Projects:</strong></p>
+     <h2 class="section-title">C Projects:</h2>
      <p class="text">
        In progress...
      </p>

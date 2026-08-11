@@ -9,6 +9,9 @@
     <!-- Including the JavaScript-->
     <script src="script.js" defer> </script> <!--Defer: A script that will not run until after the page has loaded:-->
     <!-- Including the CSS Style Sheet-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,55 +47,42 @@
     <p class="text">
       Here you will find PCBs I have designed using Eagle or KiKad.<br>
     </p>
-      <center>
-      <div>
+    <div class="topic-grid">
 
-        <a href="#Beacon2" class="link2">
-        <div class="card enlarge card_padding">
-        <!-- <figure style="width: 15%; float: left; text-align: center;"> -->
-          <figure style="text-align: center;">
+      <a href="#Beacon2" class="link2 card enlarge card_padding">
+        <figure style="text-align: center;">
           <img class="img_rounding" src="Images/PCBs/Beacon2_PCB_Traces.png">
-           <figcaption>Beacon Detector v2 PCB</figcaption>
-          </figure>
-          </a> 
-        </div>
+          <figcaption>Beacon Detector v2 PCB</figcaption>
+        </figure>
+      </a>
 
-        <a href="#Beacon1" class="link2">
-          <div class="card enlarge card_padding">
-        <!-- <figure style="width: 15%; float: left; text-align: center;"> -->
+      <a href="#Beacon1" class="link2 card enlarge card_padding">
         <figure style="text-align: center;">
           <img class="img_rounding" src="Images/PCBs/BeaconTraces.png"> </img>
           <figcaption>Beacon Detector v1 PCB</figcaption>
         </figure>
-      </a> 
-    </div>
+      </a>
 
-        <a href="#Trackwire" class="link2">
-          <div class="card enlarge card_padding">
-        <!-- <figure style="width: 15%; float: left; text-align: center;"> -->
+      <a href="#Trackwire" class="link2 card enlarge card_padding">
         <figure style="text-align: center;">
           <img class="img_rounding" src="Images/PCBs/Trackwire_PCB_Traces.png"> </img>
           <figcaption>Trackwire PCB</figcaption>
         </figure>
-      </a> 
-    </div>
+      </a>
 
-        <a href="#Ornament" class="link2">
-          <div class="card enlarge card_padding">
+      <a href="#Ornament" class="link2 card enlarge card_padding">
         <figure style="text-align: center;">
           <img class="img_rounding" src="Images/PCBs/Ornament_PCB_Traces.png"> </img>
           <figcaption>Ornament PCB</figcaption>
         </figure>
-      </a> 
-    </div>
+      </a>
 
-     </div>
-    </center>
+    </div>
   
     <br/>
     <!--Beacon Detector-->
     <hr id="Beacon2">
-    <p> <b class="text"> Beacon Detector v2:</b></p>
+    <h2 class="section-title">Beacon Detector v2:</h2>
 
     <center> 
       <b class = "text"> Beacon Detector v2 Schematic: </b> <br/>
@@ -117,7 +107,7 @@
     </p>
 
     <hr id="Beacon1">
-    <p> <b class="text"> Beacon Detector v1: </b></p>
+    <h2 class="section-title">Beacon Detector v1:</h2>
 
     <center> 
       <b class = "text"> Beacon Detector v1 Schematic: </b> <br/>
@@ -154,7 +144,7 @@
     <br>
 
     <hr id="Trackwire">
-    <p><b class="text" id="#Trackwire"> Trackwire PCB:</b></p>
+    <h2 class="section-title">Trackwire PCB:</h2>
 
     <center> 
       <b class = "text"> Trackwire Schematic: </b> <br/>
@@ -196,7 +186,7 @@
     <br>
 
     <hr id="Ornament">
-    <p><b class="text" id="#Ornament"> Ornament PCB:</b></p>
+    <h2 class="section-title">Ornament PCB:</h2>
 
     <center> 
       <b class = "text"> Ornament Schematic: </b> <br/>
