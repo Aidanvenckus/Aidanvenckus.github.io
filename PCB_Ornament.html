@@ -1,0 +1,102 @@
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Aidan Venckus</title>
+    <link rel="icon" href="Images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Including the JavaScript-->
+    <script src="script.js" defer> </script> <!--Defer: A script that will not run until after the page has loaded:-->
+    <!-- Including the CSS Style Sheet-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body class="Fade">
+    <div class="header">
+      <b class= "header_textBig TypeWriter typewriter_proj_title">Ornament PCB </b>
+      <br>
+    </div>
+
+    <!-- MOBILE NAV BAR TOGGLE-->
+    <a href = "#" class ="toggle-button">
+      <span class="bar"> </span>
+      <span class="bar"> </span>
+      <span class="bar"> </span>
+    </a>
+    <!-- NAVIGATION BAR -->
+    <nav class = "navbar">
+      <div class="navbar-links menu-font">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="3DModels.html">3D Models</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="https://aidanvenckus.netlify.app" >Apps</a></li>
+          <li><a href="PCB.html" class="currentpage">PCB Design</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <p class="text">
+      <a href="PCB.html">&larr; Back to PCB Designs</a>
+    </p>
+
+    <h2 class="section-title">Ornament PCB:</h2>
+
+    <center>
+      <b class = "text"> Ornament Schematic: </b> <br/>
+      <img class= "image img_padding"
+      src="Images/PCBs/Ornament_PCB_Traces.png"> </img> <br/>
+      <br/>
+
+      <b class = "text"> Ornament PCB Front: </b> <br/>
+      <img class= "image img_padding"
+      src="Images/PCBs/Ornament_PCB_Front.png"> </img> <br/>
+      <br/>
+
+      <b class = "text"> Ornament PCB Back: </b> <br/>
+      <img class= "image img_padding"
+      src="Images/PCBs/Ornament_PCB_Back.png"> </img> <br/>
+      <br/>
+
+      <b class = "text"> Ornament PCB Christmas: </b> <br/>
+      <img class= "image img_padding"
+      src="Images/PCBs/Ornament_PCB_Red_Green.png"> </img> <br/>
+      <br/>
+
+      <b class = "text"> Ornament on Tree: </b> <br/>
+      <div class="container">
+        <center> <img style="width: 80%; height: auto;" src="Gifs/Ornament_PCB.gif"> </center>
+      </div>
+      <br>
+
+    </center>
+
+    <p class="text">
+      This year for the holidays I gave a few Ornament PCBs to my family and friends. The PCB ran on a 9V battery and would flash its
+      LEDs based on the resistance of the potentiometer on it connected to the 555 timer. This allowed for the speed of the flashing to
+      be configurable and custom. In addition to this you are able to change out the LEDs for other colors but the resistors would need
+      to be changed as different colored LEDs require different voltages to run. I changed the schematic after ordering the PCB as I started
+      to increase the size of my traces on the PCB in addition to the size of the power and ground traces to be larger.
+    </p>
+
+    <br>
+    <br> <!--SPACE-->
+    <br>
+
+    <div class="footer">
+      <!-- Adding social media Icons and connecting Links
+      https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+      <a href="https://www.linkedin.com/in/aidan-venckus" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/aidanvenckus/" class="fa fa-instagram"></a>
+      <a href="https://github.com/Aidanvenckus" class="fa fa-github"></a>
+    </div>
+
+  </body>
+</html>

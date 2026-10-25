@@ -12,9 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
   </head>
 
   <body class="Fade">
@@ -49,28 +49,28 @@
     </p>
     <div class="topic-grid">
 
-      <a href="#Beacon2" class="link2 card enlarge card_padding">
+      <a href="PCB_Beacon2.html" class="link2 card enlarge card_padding">
         <figure style="text-align: center;">
           <img class="img_rounding" src="Images/PCBs/Beacon2_PCB_Traces.png">
           <figcaption>Beacon Detector v2 PCB</figcaption>
         </figure>
       </a>
 
-      <a href="#Beacon1" class="link2 card enlarge card_padding">
+      <a href="PCB_Beacon1.html" class="link2 card enlarge card_padding">
         <figure style="text-align: center;">
           <img class="img_rounding" src="Images/PCBs/BeaconTraces.png"> </img>
           <figcaption>Beacon Detector v1 PCB</figcaption>
         </figure>
       </a>
 
-      <a href="#Trackwire" class="link2 card enlarge card_padding">
+      <a href="PCB_Trackwire.html" class="link2 card enlarge card_padding">
         <figure style="text-align: center;">
           <img class="img_rounding" src="Images/PCBs/Trackwire_PCB_Traces.png"> </img>
           <figcaption>Trackwire PCB</figcaption>
         </figure>
       </a>
 
-      <a href="#Ornament" class="link2 card enlarge card_padding">
+      <a href="PCB_Ornament.html" class="link2 card enlarge card_padding">
         <figure style="text-align: center;">
           <img class="img_rounding" src="Images/PCBs/Ornament_PCB_Traces.png"> </img>
           <figcaption>Ornament PCB</figcaption>
@@ -78,153 +78,6 @@
       </a>
 
     </div>
-  
-    <br/>
-    <!--Beacon Detector-->
-    <hr id="Beacon2">
-    <h2 class="section-title">Beacon Detector v2:</h2>
-
-    <center> 
-      <b class = "text"> Beacon Detector v2 Schematic: </b> <br/>
-      <img class= "image img_padding"
-      src="Images/PCBs/Beacon2_PCB_Traces.png"> </img> <br/>
-      <br/>
-      <b class = "text"> Beacon Detector v2 PCB: </b> <br/>
-      <img class= "image img_padding"
-      src="Images/PCBs/Beacon2_PCB.png"> </img> <br/>
-      <br/>
-      <b class = "text"> Beacon Detector v1 vs v2 PCB: </b> <br/>
-      <img class= "image img_padding"
-      src="Images/PCBs/PCB_Compare.jpg"> </img> <br/>
-    </center>
-
-    <p class="text">
-      I needed to revise my previous Beacon Detector because I had made a few mistakes that were worth designing a 
-      new PCB for. I had made my traces too small which led to some of the ones that I used to have traces scratched 
-      which acts like a cut wire (I changed this after ordering). In addition my previous design had a couple op amps in positive feeback accidently in 
-      addition to having additional unnessesary gain stages (from 6 to 4). Lastly I did a complete size reduction and 
-      compacted all the components by moving them and utilizing all the op amp ports.
-    </p>
-
-    <hr id="Beacon1">
-    <h2 class="section-title">Beacon Detector v1:</h2>
-
-    <center> 
-      <b class = "text"> Beacon Detector v1 Schematic: </b> <br/>
-      <img class= "image img_padding"
-      src="Images/PCBs/BeaconTraces.png"> </img> <br/>
-      <br/>
-      <b class = "text"> Beacon Detector v1 PCB: </b> <br/>
-      <img class= "image img_padding"
-      src="Images/PCBs/BeaconPCB.png"> </img> <br/>
-    </center>
-
-    <p class="text">
-      This was a breadboard and perfboard circuit that I had to design as part of my capstone to be able to 
-      detect IR light from a distance away, I decided that it would be good practice and fun to try to design it 
-      into a pcb board using eagle.
-    </p>
-
-    <center class="text"> <b> Beacon Detector Stages: </b> </center>
-    <dl class="text">
-      <dt><u>Input Stage</u></dt>
-      <dd>- Starts with a Photoresistive Transistor which gives a voltage based on IR light levels and flows through a Transresistive op-amp</dd><br/>
-      <dt><u>Amplification Stage</u></dt>
-      <dd>- Takes the Input and Amplifies the signal with 6 (11x gain) non-inverting op-amps</dd><br/>
-      <dt><u>Filtering Stage</u></dt>
-      <dd>- With this amplified signal we filter out anything but the 2khz filter with a 2 stage 4th order butterworth bandpass</dd><br/>
-      <dt><u>Peak Detection Stage</u></dt>
-      <dd>- The newly filtered signal goes to a peak detector to make sure we have high wave outputs</dd><br/>
-      <dt><u>Comparator and hysterisis Stage</u></dt>
-      <dd>- The comparator takes the signal and turns it into a digital signal (1 High or 0 Low) by the use of voltage thresholds and hysterisis</dd><br/>
-      <dt><u>Output Stage</u></dt>
-      <dd>- The digital signal now gets passed to a buffer and LED to be able to show the resulting output</dd><br/>
-    </dl>
- 
-    <br>
-
-    <hr id="Trackwire">
-    <h2 class="section-title">Trackwire PCB:</h2>
-
-    <center> 
-      <b class = "text"> Trackwire Schematic: </b> <br/>
-      <img class= "image img_padding"
-      src="Images/PCBs/Trackwire_PCB_Traces.png"> </img> <br/>
-      <br/>
-
-      <b class = "text"> Trackwire PCB: </b> <br/>
-      <img class= "image img_padding"
-      src="Images/PCBs/Trackwire_PCB.png"> </img> <br/>
-      <br/>
-    </center>
-
-    <p class="text">
-      This was a trackwire detector which I used on my capstone autonomous ground robot. It worked based on a inductor that 
-      would try to read the magnetic field of a wire with osilating current running through it, take the signal, amplify it, 
-      then sample the signal through a peak detector and comparator. This allowed the signal to go from analog to a digital 
-      high and low to be read through an LED and in most cases the microcontroller IO.
-    </p>
-
-    <br>
-
-    <center class="text"> <b> Trackwire Stages: </b> </center>
-    <dl class="text">
-      <dt><u>Input Stage</u></dt>
-      <dd>- Starts with a a tank circuit which is a resonant oscillator that gets the signal from the track wire through it’s inductor.
-      The capacitor fills up with charge and it oscillates because the capacitor gives charge to the inductor and then the capacitor flips polarity (this causes a sine wave)</dd><br/>
-      <dt><u>Amplification Stage</u></dt>
-      <dd>- Takes the Input and Amplifies the signal with 3 (11x gain) non-inverting op-amps</dd><br/>
-      <dt><u>Peak Detection Stage</u></dt>
-      <dd>- The signal goes to a peak detector to make sure we have high wave outputs</dd><br/>
-      <dt><u>Comparator and hysterisis Stage</u></dt>
-      <dd>- I took out the comparator for this PCB because I wanted to direcly sample the analog signal through a ADC and be able 
-        to set the comparator and hysterisis values through software</dd><br/>
-      <dt><u>Output Stage</u></dt>
-      <dd>- The signal now gets passed to a buffer and LED to be able to show the resulting output</dd><br/>
-    </dl>
- 
-    <br>
-
-    <hr id="Ornament">
-    <h2 class="section-title">Ornament PCB:</h2>
-
-    <center> 
-      <b class = "text"> Ornament Schematic: </b> <br/>
-      <img class= "image img_padding"
-      src="Images/PCBs/Ornament_PCB_Traces.png"> </img> <br/>
-      <br/>
-
-      <b class = "text"> Ornament PCB Front: </b> <br/>
-      <img class= "image img_padding"
-      src="Images/PCBs/Ornament_PCB_Front.png"> </img> <br/>
-      <br/>
-
-      <b class = "text"> Ornament PCB Back: </b> <br/>
-      <img class= "image img_padding"
-      src="Images/PCBs/Ornament_PCB_Back.png"> </img> <br/>
-      <br/>
-
-      <b class = "text"> Ornament PCB Christmas: </b> <br/>
-      <img class= "image img_padding"
-      src="Images/PCBs/Ornament_PCB_Red_Green.png"> </img> <br/>
-      <br/>
-
-      <b class = "text"> Ornament on Tree: </b> <br/>
-      <div class="container">
-        <center> <img style="width: 80%; height: auto;" src="Gifs/Ornament_PCB.gif"> </center>
-      </div>
-      <br>
-
-    </center>
-
-    <p class="text">
-      This year for the holidays I gave a few Ornament PCBs to my family and friends. The PCB ran on a 9V battery and would flash its 
-      LEDs based on the resistance of the potentiometer on it connected to the 555 timer. This allowed for the speed of the flashing to 
-      be configurable and custom. In addition to this you are able to change out the LEDs for other colors but the resistors would need 
-      to be changed as different colored LEDs require different voltages to run. I changed the schematic after ordering the PCB as I started 
-      to increase the size of my traces on the PCB in addition to the size of the power and ground traces to be larger.
-    </p>
-
 
     <br>
     <br> <!--SPACE-->
@@ -233,9 +86,9 @@
     <div class="footer">  
       <!-- Adding social media Icons and connecting Links
       https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
-      <a href="https://www.linkedin.com/in/aidan-venckus" class="fa fa-LinkedIn"></a>
-      <a href="https://www.instagram.com/aidanvenckus/" class="fa fa-Instagram"></a>
-      <a href="https://github.com/Aidanvenckus" class="fa fa-Github"></a>
+      <a href="https://www.linkedin.com/in/aidan-venckus" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/aidanvenckus/" class="fa fa-instagram"></a>
+      <a href="https://github.com/Aidanvenckus" class="fa fa-github"></a>
     </div>
 
   </body>

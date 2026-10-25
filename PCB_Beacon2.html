@@ -1,0 +1,87 @@
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Aidan Venckus</title>
+    <link rel="icon" href="Images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Including the JavaScript-->
+    <script src="script.js" defer> </script> <!--Defer: A script that will not run until after the page has loaded:-->
+    <!-- Including the CSS Style Sheet-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body class="Fade">
+    <div class="header">
+      <b class= "header_textBig TypeWriter typewriter_proj_title">Beacon Detector v2 </b>
+      <br>
+    </div>
+
+    <!-- MOBILE NAV BAR TOGGLE-->
+    <a href = "#" class ="toggle-button">
+      <span class="bar"> </span>
+      <span class="bar"> </span>
+      <span class="bar"> </span>
+    </a>
+    <!-- NAVIGATION BAR -->
+    <nav class = "navbar">
+      <div class="navbar-links menu-font">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="3DModels.html">3D Models</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="https://aidanvenckus.netlify.app" >Apps</a></li>
+          <li><a href="PCB.html" class="currentpage">PCB Design</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <p class="text">
+      <a href="PCB.html">&larr; Back to PCB Designs</a>
+    </p>
+
+    <h2 class="section-title">Beacon Detector v2:</h2>
+
+    <center>
+      <b class = "text"> Beacon Detector v2 Schematic: </b> <br/>
+      <img class= "image img_padding"
+      src="Images/PCBs/Beacon2_PCB_Traces.png"> </img> <br/>
+      <br/>
+      <b class = "text"> Beacon Detector v2 PCB: </b> <br/>
+      <img class= "image img_padding"
+      src="Images/PCBs/Beacon2_PCB.png"> </img> <br/>
+      <br/>
+      <b class = "text"> Beacon Detector v1 vs v2 PCB: </b> <br/>
+      <img class= "image img_padding"
+      src="Images/PCBs/PCB_Compare.jpg"> </img> <br/>
+    </center>
+
+    <p class="text">
+      I needed to revise my previous Beacon Detector because I had made a few mistakes that were worth designing a
+      new PCB for. I had made my traces too small which led to some of the ones that I used to have traces scratched
+      which acts like a cut wire (I changed this after ordering). In addition my previous design had a couple op amps in positive feeback accidently in
+      addition to having additional unnessesary gain stages (from 6 to 4). Lastly I did a complete size reduction and
+      compacted all the components by moving them and utilizing all the op amp ports.
+    </p>
+
+    <br>
+    <br> <!--SPACE-->
+    <br>
+
+    <div class="footer">
+      <!-- Adding social media Icons and connecting Links
+      https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+      <a href="https://www.linkedin.com/in/aidan-venckus" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/aidanvenckus/" class="fa fa-instagram"></a>
+      <a href="https://github.com/Aidanvenckus" class="fa fa-github"></a>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,102 @@
+
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <title>Aidan Venckus</title>
+    <link rel="icon" href="Images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Including the JavaScript-->
+    <script src="script.js" defer> </script> <!--Defer: A script that will not run until after the page has loaded:-->
+    <!-- Including the CSS Style Sheet-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body class="Fade">
+    <div class="header">
+      <b class= "header_textBig TypeWriter typewriter_proj_title">Trackwire PCB </b>
+      <br>
+    </div>
+
+    <!-- MOBILE NAV BAR TOGGLE-->
+    <a href = "#" class ="toggle-button">
+      <span class="bar"> </span>
+      <span class="bar"> </span>
+      <span class="bar"> </span>
+    </a>
+    <!-- NAVIGATION BAR -->
+    <nav class = "navbar">
+      <div class="navbar-links menu-font">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="3DModels.html">3D Models</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="https://aidanvenckus.netlify.app" >Apps</a></li>
+          <li><a href="PCB.html" class="currentpage">PCB Design</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <p class="text">
+      <a href="PCB.html">&larr; Back to PCB Designs</a>
+    </p>
+
+    <h2 class="section-title">Trackwire PCB:</h2>
+
+    <center>
+      <b class = "text"> Trackwire Schematic: </b> <br/>
+      <img class= "image img_padding"
+      src="Images/PCBs/Trackwire_PCB_Traces.png"> </img> <br/>
+      <br/>
+
+      <b class = "text"> Trackwire PCB: </b> <br/>
+      <img class= "image img_padding"
+      src="Images/PCBs/Trackwire_PCB.png"> </img> <br/>
+      <br/>
+    </center>
+
+    <p class="text">
+      This was a trackwire detector which I used on my capstone autonomous ground robot. It worked based on a inductor that
+      would try to read the magnetic field of a wire with osilating current running through it, take the signal, amplify it,
+      then sample the signal through a peak detector and comparator. This allowed the signal to go from analog to a digital
+      high and low to be read through an LED and in most cases the microcontroller IO.
+    </p>
+
+    <br>
+
+    <center class="text"> <b> Trackwire Stages: </b> </center>
+    <dl class="text">
+      <dt><u>Input Stage</u></dt>
+      <dd>- Starts with a a tank circuit which is a resonant oscillator that gets the signal from the track wire through it’s inductor.
+      The capacitor fills up with charge and it oscillates because the capacitor gives charge to the inductor and then the capacitor flips polarity (this causes a sine wave)</dd><br/>
+      <dt><u>Amplification Stage</u></dt>
+      <dd>- Takes the Input and Amplifies the signal with 3 (11x gain) non-inverting op-amps</dd><br/>
+      <dt><u>Peak Detection Stage</u></dt>
+      <dd>- The signal goes to a peak detector to make sure we have high wave outputs</dd><br/>
+      <dt><u>Comparator and hysterisis Stage</u></dt>
+      <dd>- I took out the comparator for this PCB because I wanted to direcly sample the analog signal through a ADC and be able
+        to set the comparator and hysterisis values through software</dd><br/>
+      <dt><u>Output Stage</u></dt>
+      <dd>- The signal now gets passed to a buffer and LED to be able to show the resulting output</dd><br/>
+    </dl>
+
+    <br>
+    <br> <!--SPACE-->
+    <br>
+
+    <div class="footer">
+      <!-- Adding social media Icons and connecting Links
+      https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+      <a href="https://www.linkedin.com/in/aidan-venckus" class="fa fa-linkedin"></a>
+      <a href="https://www.instagram.com/aidanvenckus/" class="fa fa-instagram"></a>
+      <a href="https://github.com/Aidanvenckus" class="fa fa-github"></a>
+    </div>
+
+  </body>
+</html>
