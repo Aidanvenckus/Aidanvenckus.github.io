@@ -388,6 +388,27 @@ a:hover { color: var(--accent-strong); }
 
 img { max-width: 100%; }
 
+/* 3D models page: image on the left, download buttons always on the right */
+.container.model-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 28px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.model-row center { text-align: right; }
+.model-row .img_padding { width: 100%; max-width: 420px; height: auto; }
+.model-row .text { padding: 0; }
+.model-row .text p { margin: 4px 0; }
+.model-row .link { max-width: 100%; overflow-wrap: anywhere; }
+/* phones: stack the downloads under the image */
+@media screen and (max-width: 767px) {
+  .container.model-row { grid-template-columns: 1fr; gap: 12px; }
+  .model-row center, .model-row .text { text-align: center; }
+}
+
 img.image, img.img_padding {
   border: 1px solid var(--border);
   background: var(--surface-2);
